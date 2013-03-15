@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="SCA Explorer" uid="gov.redhawk.explorer.rcp.product" id="gov.redhawk.explorer.rcp.product" application="gov.redhawk.explorer.rcp.application" version="1.9.0.qualifier" useFeatures="true" includeLaunchers="true">
+
+   <aboutInfo>
+      <image path="/gov.redhawk.explorer.rcp/icons/alt_about.gif"/>
+      <text>
+         %productBlurb
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgs>-Xms40m
+-Xmx512m
+-XX:MaxPermSize=256m
+-Dcom.sun.CORBA.transport.ORBUseNIOSelectToWait=false
+-Djava.util.logging.config.file=configuration/javalogger.properties
+-Djava.net.preferIPv4Stack=true
+
+-Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton
+-Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer</vmArgs>
+
+<vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+
+   </launcherArgs>
+
+   <windowImages i16="/gov.redhawk.explorer.rcp/icons/alt_window_16.gif" i32="/gov.redhawk.explorer.rcp/icons/alt_window_32.gif"/>
+
+   <launcher name="explorer">
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="gov.redhawk.explorer.rcp" version="1.9.0.qualifier"/>
+      <feature id="gov.redhawk.explorer.rcp.platform" version="1.9.0.qualifier"/>
+      <feature id="gov.redhawk.explorer.rcp.support" version="1.9.0.qualifier"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="4" />
+      <property name="eclipse.buildId" value="@buildId@" />
+      <property name="osgi.instance.area" value="@user.home/.sca_explorer" />
+   </configurations>
+
+</product>

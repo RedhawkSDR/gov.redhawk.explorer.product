@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/gov.redhawk.explorer.rcp_1.9.0.qualifier.jar" id="gov.redhawk.explorer.rcp" version="1.9.0.qualifier" >
+      <category name="gov.redhawk"/>
+   </feature>
+   <feature url="features/gov.redhawk.explorer.rcp.source_1.9.0.qualifier.jar" id="gov.redhawk.explorer.rcp.source" version="1.9.0.qualifier" >
+      <category name="gov.redhawk"/>
+   </feature>
+   <category-def name="gov.redhawk" label="REDHAWK"/>
+</site>
