@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Example Startup Wizard configuration -->
-<waveforms>
-  <type name="Waveform Type">
-    <waveform name="Waveform 1" path="/waveforms/waveform1/waveform1.sad.xml"/>
-    <waveform name="Waveform 2" path="/waveforms/waveform2/waveform2.sad.xml"/>
-  </type>
-</waveforms>
-

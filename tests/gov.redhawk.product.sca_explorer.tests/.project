@@ -30,15 +30,7 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
-<<<<<<< HEAD:plugins/gov.redhawk.product.sca_explorer.tests/.project
-	</buildSpec>
-	<natures>
-=======
-
-	</buildSpec>
-	<natures>
-		
->>>>>>> 8cdd3e7debc9df3016f2e848eb4f2f14c590b50e:tests/gov.redhawk.product.sca_explorer.tests/.project
+	
 		<nature>org.eclipse.pde.PluginNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>net.sf.eclipsecs.core.CheckstyleNature</nature>
