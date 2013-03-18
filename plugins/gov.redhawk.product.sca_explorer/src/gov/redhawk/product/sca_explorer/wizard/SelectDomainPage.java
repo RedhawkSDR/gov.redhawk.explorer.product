@@ -21,8 +21,8 @@ import gov.redhawk.model.sca.provider.ScaItemProviderAdapterFactory;
 import gov.redhawk.model.sca.provider.ScaWaveformsContainerItemProvider;
 import gov.redhawk.product.sca_explorer.Activator;
 import gov.redhawk.sca.ScaPlugin;
+import gov.redhawk.sca.ui.parts.FormFilteredTree;
 import gov.redhawk.sca.ui.preferences.DomainEntryWizard;
-import gov.redhawk.ui.parts.FormFilteredTree;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
