@@ -5,7 +5,7 @@
     <import file="${commondir}/pdebuild.xml"/>
 
     <target name="buildAll" depends="clean">
-        <buildProduct featureId="gov.redhawk.explorer.rcp.feature" productId="explorer"/>
+        <buildProduct featureId="gov.redhawk.explorer.rcp.feature" productName="sca_explorer" outputName="sca_explorer" folderName="sca_explorer"/>
     </target>
 
 </project>
