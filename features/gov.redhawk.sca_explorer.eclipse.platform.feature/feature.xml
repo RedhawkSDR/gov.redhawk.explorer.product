@@ -1,58 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	This file is protected by Copyright. Please refer to the COPYRIGHT file distributed with this 
-	source distribution.
+        This file is protected by Copyright. Please refer to the COPYRIGHT file distributed with this 
+        source distribution.
 
-	This file is part of REDHAWK IDE.
-	
-	All rights reserved.  This program and the accompanying materials are made available under 
-	the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at 
-	http://www.eclipse.org/legal/epl-v10.html
+        This file is part of REDHAWK IDE.
+        
+        All rights reserved.  This program and the accompanying materials are made available under 
+        the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at 
+        http://www.eclipse.org/legal/epl-v10.html
 -->
 <feature
       id="gov.redhawk.sca_explorer.eclipse.platform"
       label="%featureName"
-      version="1.8.3.qualifier"
+      version="1.8.4.qualifier"
       provider-name="%providerName"
       image="rh_logo_128x128.gif">
 
   <description url="http://redhawksdr.org">
-  	%description
+        %description
   </description>
-  
+
   <copyright url="http://redhawksdr.org">
-  	%copyright
+        %copyright
   </copyright>
-  
-  <license url="%licenseURL">:
-  	%license
-  </license> 
+
+  <license url="%licenseURL">
+        %license
+  </license>
 
    <includes
          id="org.eclipse.rcp"
-         version="3.6.1.r361_v20100827-9OArFLdFjY-ThSQXmKvKz0_T"/>
+         version="0.0.0"/>
 
    <includes
-         id="org.eclipse.equinox.p2.user.ui"
-         version="2.0.1.r361_v20100903-897HFZFFZRuSD2LMtVxyz0Vr"
-         optional="true"/>
-
-   <includes
-         id="org.eclipse.help"
-         version="1.2.0.v20100427-7e7jEQFEp4jsWcboLU9l93"/>
+         id="org.eclipse.rcp.source"
+         version="0.0.0"/>
 
    <plugin
          id="org.eclipse.compare.core"
          download-size="0"
          install-size="0"
-         version="3.5.100.I20100526-0800"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.compare.core.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.compare"
          download-size="0"
          install-size="0"
-         version="3.5.100.I20100526-0800"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.compare.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
@@ -60,35 +69,56 @@
          os="win32"
          download-size="0"
          install-size="0"
-         version="1.0.100.I20100505-1245"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.core.boot"
          download-size="0"
          install-size="0"
-         version="3.1.200.v20100505"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.core.filebuffers"
          download-size="0"
          install-size="0"
-         version="3.5.100.v20100520-0800"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.core.filebuffers.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.core.filesystem"
          download-size="0"
          install-size="0"
-         version="1.3.1.R36x_v20100727-0745"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.core.filesystem.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.core.net"
          download-size="0"
          install-size="0"
-         version="1.2.100.I20100511-0800"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.core.net.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
@@ -97,7 +127,7 @@
          arch="x86"
          download-size="0"
          install-size="0"
-         version="1.0.100.I20100511-0800"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -107,7 +137,7 @@
          arch="x86_64"
          download-size="0"
          install-size="0"
-         version="1.1.0.I20100505-1245"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -117,7 +147,7 @@
          arch="x86_64"
          download-size="0"
          install-size="0"
-         version="1.0.100.I20100505-1245"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -127,7 +157,7 @@
          arch="x86"
          download-size="0"
          install-size="0"
-         version="1.1.100.R36x_v20100825-0800"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -135,152 +165,303 @@
          id="org.eclipse.core.resources"
          download-size="0"
          install-size="0"
-         version="3.6.0.R36x_v20100825-0600"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.core.resources.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.core.runtime.compatibility"
          download-size="0"
          install-size="0"
-         version="3.2.100.v20100505"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.core.runtime.compatibility.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.core.runtime.compatibility.registry"
          download-size="0"
          install-size="0"
-         version="3.3.0.v20100520"
+         version="0.0.0"
          fragment="true"/>
+
+   <plugin
+         id="org.eclipse.core.runtime.compatibility.registry.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
 
    <plugin
          id="org.eclipse.osgi.util"
          download-size="0"
          install-size="0"
-         version="3.2.100.v20100503"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.osgi.util.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.equinox.event"
          download-size="0"
          install-size="0"
-         version="1.2.0.v20100503"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.event.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.help.appserver"
          download-size="0"
          install-size="0"
-         version="3.1.400.v20100427"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.help.appserver.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.platform"
          download-size="0"
          install-size="0"
-         version="3.6.1.v201009090800"/>
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.platform.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
 
    <plugin
          id="org.eclipse.search"
          download-size="0"
          install-size="0"
-         version="3.6.0.v20100520-0800"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.search.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.text"
          download-size="0"
          install-size="0"
-         version="3.5.0.v20100601-1300"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.text.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jface.text"
          download-size="0"
          install-size="0"
-         version="3.6.1.r361_v20100825-0800"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jface.text.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.ui.console"
          download-size="0"
          install-size="0"
-         version="3.5.0.v20100526"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.console.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.ui.presentations.r21"
          download-size="0"
          install-size="0"
-         version="3.2.200.I20100517-1500"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.presentations.r21.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.ui.intro"
          download-size="0"
          install-size="0"
-         version="3.4.0.v20100427"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.intro.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.ui.intro.universal"
          download-size="0"
          install-size="0"
-         version="3.2.402.r36_v20100702"/>
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.ui.intro.universal.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
 
    <plugin
          id="org.eclipse.ui.cheatsheets"
          download-size="0"
          install-size="0"
-         version="3.4.0.v20100427"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.cheatsheets.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.ui.browser"
          download-size="0"
          install-size="0"
-         version="3.3.0.v20100517"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.browser.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.ui.navigator"
          download-size="0"
          install-size="0"
-         version="3.5.0.I20100601-0800"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.navigator.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.ui.navigator.resources"
          download-size="0"
          install-size="0"
-         version="3.4.201.M20100707-0800"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.navigator.resources.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.ui.net"
          download-size="0"
          install-size="0"
-         version="1.2.100.I20100505-1245"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.net.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.ui.workbench.texteditor"
          download-size="0"
          install-size="0"
-         version="3.6.1.r361_v20100714-0800"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.workbench.texteditor.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.ui.views"
          download-size="0"
          install-size="0"
-         version="3.5.0.I20100527-0800"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.views.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.ui.editors"
          download-size="0"
          install-size="0"
-         version="3.6.1.r361_v20100825-0800"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.editors.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
@@ -288,7 +469,7 @@
          ws="win32"
          download-size="0"
          install-size="0"
-         version="3.2.200.I20100509-0800"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -296,29 +477,56 @@
          id="org.eclipse.update.core"
          download-size="0"
          install-size="0"
-         version="3.2.402.R36x_v20100629"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.update.core.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.update.scheduler"
          download-size="0"
          install-size="0"
-         version="3.2.300.v20100512"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.update.scheduler.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.update.ui"
          download-size="0"
          install-size="0"
-         version="3.2.300.v20100512"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.update.ui.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.ui.workbench.compatibility"
          download-size="0"
          install-size="0"
-         version="3.2.100.I20100511-0800"
+         version="0.0.0"
          fragment="true"/>
+
+   <plugin
+         id="org.eclipse.ui.workbench.compatibility.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
 
    <plugin
          id="org.eclipse.core.filesystem.aix.ppc"
@@ -326,7 +534,7 @@
          arch="ppc"
          download-size="0"
          install-size="0"
-         version="1.1.0.v20100505-1235"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -336,7 +544,7 @@
          arch="ia64_32"
          download-size="0"
          install-size="0"
-         version="1.0.100.v20100505"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -346,7 +554,7 @@
          arch="ppc"
          download-size="0"
          install-size="0"
-         version="1.0.200.v20100505-1235"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -356,7 +564,7 @@
          arch="x86"
          download-size="0"
          install-size="0"
-         version="1.4.0.v20100505-1235"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -366,7 +574,7 @@
          arch="x86_64"
          download-size="0"
          install-size="0"
-         version="1.2.0.v20100505-1235"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -376,7 +584,7 @@
          arch="sparc"
          download-size="0"
          install-size="0"
-         version="1.2.0.v20100505-1235"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -385,7 +593,7 @@
          os="macosx"
          download-size="0"
          install-size="0"
-         version="1.3.0.v20100505"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -395,7 +603,7 @@
          arch="x86"
          download-size="0"
          install-size="0"
-         version="1.1.201.R36x_v20100727-0745"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -405,7 +613,7 @@
          arch="x86"
          download-size="0"
          install-size="0"
-         version="3.5.100.v20100505-1345"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -415,7 +623,7 @@
          arch="x86_64"
          download-size="0"
          install-size="0"
-         version="1.1.201.R36x_v20100727-0745"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -423,14 +631,28 @@
          id="org.eclipse.core.variables"
          download-size="0"
          install-size="0"
-         version="3.2.400.v20100505"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.core.variables.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.ui.forms"
          download-size="0"
          install-size="0"
-         version="3.5.2.r36_v20100702"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.forms.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
@@ -439,7 +661,7 @@
          arch="x86"
          download-size="0"
          install-size="0"
-         version="3.2.200.v20100512"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -448,7 +670,7 @@
          os="win32"
          download-size="0"
          install-size="0"
-         version="3.2.200.v20100512"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -456,21 +678,42 @@
          id="org.eclipse.ui.views.properties.tabbed"
          download-size="0"
          install-size="0"
-         version="3.5.100.I20100509-0800"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.views.properties.tabbed.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.equinox.security"
          download-size="0"
          install-size="0"
-         version="1.0.200.v20100503"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.security.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.equinox.security.ui"
          download-size="0"
          install-size="0"
-         version="1.0.200.v20100503"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.security.ui.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
@@ -479,7 +722,7 @@
          arch="x86"
          download-size="0"
          install-size="0"
-         version="1.0.200.v20100503"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -489,7 +732,7 @@
          arch="x86"
          download-size="0"
          install-size="0"
-         version="1.100.100.v20100503"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -499,7 +742,7 @@
          arch="x86_64"
          download-size="0"
          install-size="0"
-         version="1.100.100.v20100503"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -509,8 +752,22 @@
          arch="ppc"
          download-size="0"
          install-size="0"
-         version="1.100.100.v20100503"
+         version="0.0.0"
          fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.ide"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.ide.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
 </feature>

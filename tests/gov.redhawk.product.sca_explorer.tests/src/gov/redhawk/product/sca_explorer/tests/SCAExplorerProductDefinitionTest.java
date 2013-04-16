@@ -1,16 +1,12 @@
-/*******************************************************************************
- * This file is protected by Copyright.
- * Please refer to the COPYRIGHT file distributed with this source distribution.
+/**
+ * REDHAWK HEADER
  *
- * This file is part of REDHAWK IDE.
- *
- * All rights reserved.  This program and the accompanying materials are made available under
- * the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- *******************************************************************************/
+ * Identification: $Revision: 6646 $
+ */
 package gov.redhawk.product.sca_explorer.tests;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -25,6 +21,7 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.osgi.framework.Bundle;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -43,7 +40,7 @@ public class SCAExplorerProductDefinitionTest {
 	/**
 	 * Parse the sca_explorer.product file and build list of items under the
 	 * configurations node.
-	 *
+	 * 
 	 * @throws Exception
 	 */
 	@Before
@@ -57,7 +54,7 @@ public class SCAExplorerProductDefinitionTest {
 
 	/**
 	 * Tear down the builder and configElements list between tests.
-	 *
+	 * 
 	 * @throws Exception
 	 */
 	@After
@@ -114,20 +111,24 @@ public class SCAExplorerProductDefinitionTest {
 
 	/**
 	 * Parses the ide.product file.
-	 *
+	 * 
 	 * @return the {@link Document} resulting from parsing the ide.product file
 	 * @throws SAXException
 	 * @throws IOException
 	 */
 	private Document parseSCAExplorerProduct() throws SAXException, IOException {
-		return this.builder.parse(FileLocator.toFileURL(FileLocator.find(Platform.getBundle("gov.redhawk.product.sca_explorer"),
-		        new Path("sca_explorer.product"),
-		        null)).toString());
+		Bundle bundle = Platform.getBundle("gov.redhawk.product.sca_explorer");
+		Assert.assertNotNull("Can not find Explorer Bundle", bundle);
+		URL fileUrl = FileLocator.find(bundle, new Path("sca_explorer.product"), null);
+		Assert.assertNotNull("Can not find product in bundle", fileUrl);
+		fileUrl = FileLocator.toFileURL(fileUrl);
+		Assert.assertNotNull("Can not find product in bundle", fileUrl);
+		return this.builder.parse(fileUrl.toString());
 	}
 
 	/**
 	 * Builds a list of {@link Node} under the "configurations" element.
-	 *
+	 * 
 	 * @param document the {@link Document} associated with the ide.product file
 	 */
 	private void buildConfigElementList(final Document document) {
