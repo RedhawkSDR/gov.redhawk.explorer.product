@@ -35,7 +35,7 @@
                     <products>
                         <product>
                             <id>gov.redhawk.explorer</id>
-                            <archiveFileName>sca-explorer-${unqualifiedVersion}.${buildQualifier}</archiveFileName>
+                            <archiveFileName>sca-explorer-${unqualifiedVersion}.${buildType}${buildQualifier}</archiveFileName>
                             <rootFolder>sca-explorer</rootFolder>
                         </product>
                     </products>
@@ -52,7 +52,7 @@
                         <configuration>
                             <target>
                                 <replace file="explorer.product">
-                                    <replacefilter value="${buildQualifier}" token="@buildId@" />
+                                    <replacefilter value="${buildType}${buildQualifier}" token="@buildId@" />
                                 </replace>
                             </target>
                         </configuration>
