@@ -16,17 +16,17 @@
       provider-name="%providerName"
       image="rh_logo_128x128.gif">
 
-  <description url="http://redhawksdr.org">
-        %description
-  </description>
-  
-  <copyright url="http://redhawksdr.org">
-        %copyright
-  </copyright>
-  
-  <license url="%licenseURL">
-        %license
-  </license> 
+   <description url="http://redhawksdr.org">
+      %description
+   </description>
+
+   <copyright url="http://redhawksdr.org">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
 
    <includes
          id="org.eclipse.emf.edit"
@@ -153,7 +153,7 @@
          version="0.0.0"/>
 
    <includes
-         id="org.jacorb.systemFragment"
+         id="org.jacorb"
          version="0.0.0"/>
 
    <plugin

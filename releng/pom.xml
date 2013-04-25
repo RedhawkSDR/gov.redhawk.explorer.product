@@ -23,7 +23,7 @@
         <nxm-rcp>http://download.redhawksdr.org/nxm-rcp/releases/1.0</nxm-rcp>
         <rcp-patch>http://download.redhawksdr.org/rcp-patch</rcp-patch>
         <rcp-patch-source>http://download.redhawksdr.org/rcp-patch-source</rcp-patch-source>
-
+		<jacorb>http://download.redhawksdr.org/jacorb/releases/3.1</jacorb>
     </properties>
 
     <repositories>
@@ -80,6 +80,12 @@
             <layout>p2</layout>
             <url>${rcp-patch-source}</url>
         </repository>
+        
+         <repository>
+            <id>org.omg.jacorb</id>
+            <layout>p2</layout>
+            <url>${jacorb}</url>
+        </repository>
     </repositories>
 
 
@@ -91,4 +97,25 @@
         <module>p2</module>
         <module>product</module>
     </modules>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>tycho-surefire-plugin</artifactId>
+                <version>${tycho-version}</version>
+                <configuration>
+                    <argLine>-Xmx512m -Djava.net.preferIPv4Stack=true -Dorg.omg.CORBA.ORBClass=org.jacorb.orb.ORB -Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton -Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer</argLine>
+                    <appArgLine>-nl en</appArgLine>
+                    <dependencies>
+                        <dependency>
+                            <type>eclipse-feature</type>
+                            <artifactId>org.jacorb</artifactId>
+                            <version>0.0.0</version>
+                        </dependency>
+                    </dependencies>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
