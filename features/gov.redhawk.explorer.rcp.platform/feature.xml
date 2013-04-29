@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="gov.redhawk.explorer.rcp.platform"
-      label="SCA Explorer Lightweight Eclipse Platform"
+      label="%featureName"
       version="1.9.0.qualifier"
-      provider-name="United States Government">
+      provider-name="%providerName">
 
-   <description>
-      This feature is a stripped down version of the org.eclipse.platform feature.
-   </description>
+  <description url="http://redhawksdr.org">
+        %description
+  </description>
+
+  <copyright url="http://redhawksdr.org">
+        %copyright
+  </copyright>
+
+  <license url="%licenseURL">
+        %license
+  </license>
 
    <includes
          id="org.eclipse.rcp"
