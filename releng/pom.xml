@@ -19,7 +19,7 @@
         <mil.jpeojtrs.sca>http://download.redhawksdr.org/mil.jpeojtrs.sca/releases/1.8</mil.jpeojtrs.sca>
         <gov.redhawk.core>http://download.redhawksdr.org/gov.redhawk.core/releases/1.8</gov.redhawk.core>
         <redhawk-core-framework>http://download.redhawksdr.org/redhawk-core-framework/releases/1.8</redhawk-core-framework>
-        <nxm>http://download.redhawksdr.org/nxm/releases/latest</nxm>
+        <nxm>http://nextmidas.techma.com/p2/nxm/updates/stable</nxm>
         <nxm-rcp>http://download.redhawksdr.org/nxm-rcp/releases/1.0</nxm-rcp>
         <rcp-patch>http://download.redhawksdr.org/rcp-patch</rcp-patch>
         <rcp-patch-source>http://download.redhawksdr.org/rcp-patch-source</rcp-patch-source>
