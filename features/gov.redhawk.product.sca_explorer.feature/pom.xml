@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>gov.redhawk.product.sca_explorer.feature</artifactId>
     <packaging>eclipse-feature</packaging>
-    <version>1.8.4-SNAPSHOT</version>
+    <version>1.8.5-SNAPSHOT</version>
     <parent>
         <groupId>gov.redhawk.explorer.rcp</groupId>
         <artifactId>releng</artifactId>
