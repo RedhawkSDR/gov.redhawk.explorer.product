@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="gov.redhawk.explorer.rcp.support"
-      label="SCA Explorer Support Bundles Feature"
+      label="%featureName"
       version="1.9.0.qualifier"
-      provider-name="United States Government">
+      provider-name="%providerName"
+      image="rh_logo_128x128.gif">
 
    <description>
-      This is a collection of bundles that support SCA Explorer but
-either do not have their own feature or they come with a feature
-that contians unwanted bundles.
+      %description
    </description>
 
    <includes
