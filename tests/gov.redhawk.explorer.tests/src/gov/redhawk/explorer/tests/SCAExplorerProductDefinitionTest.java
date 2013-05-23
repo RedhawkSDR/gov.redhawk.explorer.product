@@ -1,8 +1,13 @@
-/**
- * REDHAWK HEADER
+/*******************************************************************************
+ * This file is protected by Copyright. 
+ * Please refer to the COPYRIGHT file distributed with this source distribution.
  *
- * Identification: $Revision: 6646 $
- */
+ * This file is part of REDHAWK IDE.
+ *
+ * All rights reserved.  This program and the accompanying materials are made available under 
+ * the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at 
+ * http://www.eclipse.org/legal/epl-v10.html
+ *******************************************************************************/
 package gov.redhawk.explorer.tests;
 
 import java.io.IOException;
@@ -89,14 +94,13 @@ public class SCAExplorerProductDefinitionTest {
 				}
 			}
 		}
-		
+
 		Assert.assertNotNull("The sca_explorer.product file must contain an osgi.instance.area property", buildIdElement);
 		if (buildIdElement == null) {
 			throw new AssertionFailedError();
 		}
-		Assert.assertEquals("The osgi.instance.area property must have a value of '@user.home/.sca_explorer'",
-		        "@user.home/.sca_explorer",
-		        buildIdElement.getAttribute("value"));
+		Assert.assertEquals("The osgi.instance.area property must have a value of '@user.home/.sca_explorer'", "@user.home/.sca_explorer",
+		                    buildIdElement.getAttribute("value"));
 	}
 
 	@Test
