@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>gov.redhawk.explorer.rcp</groupId>
+	<groupId>gov.redhawk.explorer</groupId>
 	<artifactId>releng</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
@@ -90,10 +90,10 @@
 
 
 	<modules>
-		<module>../features/gov.redhawk.explorer.rcp.feature</module>
-		<module>../features/gov.redhawk.explorer.rcp.platform</module>
-		<module>../features/gov.redhawk.explorer.rcp.support.feature</module>
-		<module>../plugins/gov.redhawk.explorer.rcp</module>
+		<module>../features/gov.redhawk.explorer.feature</module>
+		<module>../features/gov.redhawk.explorer.platform</module>
+		<module>../features/gov.redhawk.explorer.support</module>
+		<module>../plugins/gov.redhawk.explorer</module>
 		<module>p2</module>
 		<module>product</module>
 	</modules>

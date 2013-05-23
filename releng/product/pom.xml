@@ -4,9 +4,9 @@
 	<artifactId>gov.redhawk.explorer.product</artifactId>
 	<version>1.9.0-SNAPSHOT</version>
 	<packaging>eclipse-repository</packaging>
-	<groupId>gov.redhawk.explorer.rcp.product</groupId>
+	<groupId>gov.redhawk.explorer.product</groupId>
 	<parent>
-		<groupId>gov.redhawk.explorer.rcp</groupId>
+		<groupId>gov.redhawk.explorer</groupId>
 		<artifactId>releng</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
@@ -34,10 +34,10 @@
 				<configuration>
 					<products>
 						<product>
-							<id>gov.redhawk.explorer</id>
-							<archiveFileName>sca-explorer-${unqualifiedVersion}.${buildType}${buildQualifier}
+							<id>gov.redhawk.explorer.product</id>
+							<archiveFileName>redhawk-explorer-${unqualifiedVersion}.${buildType}${buildQualifier}
 							</archiveFileName>
-							<rootFolder>sca-explorer</rootFolder>
+							<rootFolder>redhawk</rootFolder>
 						</product>
 					</products>
 				</configuration>
