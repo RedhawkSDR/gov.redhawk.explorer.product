@@ -23,10 +23,7 @@
 -Dorg.omg.CORBA.ORBClass=org.jacorb.orb.ORB
 -Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton
 -Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer
--Djacorb.connection.server.timeout=5000 
--Djacorb.client.pending_reply_timeout=5000 
--Djacorb.connection.client.idle.timeout=5000 
--Djacorb.thread_pool_min=0</vmArgs>
+-Djacorb.config.dir=configuration</vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
    </launcherArgs>
 
@@ -38,6 +35,7 @@
          <bmp/>
       </win>
    </launcher>
+
 
    <vm>
    </vm>
