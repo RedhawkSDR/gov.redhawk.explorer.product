@@ -19,8 +19,6 @@ import java.util.List;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import junit.framework.AssertionFailedError;
-
 import org.eclipse.core.runtime.FileLocator;
 import org.eclipse.core.runtime.Path;
 import org.eclipse.core.runtime.Platform;
@@ -96,11 +94,8 @@ public class SCAExplorerProductDefinitionTest {
 		}
 
 		Assert.assertNotNull("The sca_explorer.product file must contain an osgi.instance.area property", buildIdElement);
-		if (buildIdElement == null) {
-			throw new AssertionFailedError();
-		}
 		Assert.assertEquals("The osgi.instance.area property must have a value of '@user.home/.sca_explorer'", "@user.home/.sca_explorer",
-		                    buildIdElement.getAttribute("value"));
+			buildIdElement.getAttribute("value"));
 	}
 
 	@Test
@@ -116,9 +111,6 @@ public class SCAExplorerProductDefinitionTest {
 			}
 		}
 		Assert.assertNotNull("The ide.product file must contain an eclipse.buildId property", buildIdElement);
-		if (buildIdElement == null) {
-			throw new AssertionFailedError();
-		}
 		Assert.assertEquals("The eclipse.buildId property must have a value of '@buildId@'", "@buildId@", buildIdElement.getAttribute("value"));
 	}
 
