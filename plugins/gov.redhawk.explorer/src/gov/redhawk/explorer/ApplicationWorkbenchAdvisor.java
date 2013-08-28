@@ -37,11 +37,7 @@ import org.eclipse.ui.progress.WorkbenchJob;
 
 public class ApplicationWorkbenchAdvisor extends WorkbenchAdvisor {
 
-	private static final String PERSPECTIVE_ID = "gov.redhawk.explorer.rcp.perspective";
-	
-	private static final String PERSPECTIVE_ID_SD = "gov.redhawk.sca.ui.singledomain.perspective";
-	
-	private static final String PROP_SINGLE_DOMAIN = "gov.redhawk.sca.singledomain";
+	private static final String PERSPECTIVE_ID = "gov.redhawk.explorer.perspective";
 
 	/* This class was essentially copied from org.eclipse.ide.internal */
 	class WorkbenchAdapterFactory implements IAdapterFactory {
@@ -98,12 +94,7 @@ public class ApplicationWorkbenchAdvisor extends WorkbenchAdvisor {
 
 	@Override
 	public String getInitialWindowPerspectiveId() {
-		if (System.getProperty(PROP_SINGLE_DOMAIN) != null) {
-		//if (Activator.getDefault().getBundle().getBundleContext().getProperty("osgi." + PROP_SINGLE_DOMAIN) != null) {
-			return ApplicationWorkbenchAdvisor.PERSPECTIVE_ID_SD;
-		} else {
-			return ApplicationWorkbenchAdvisor.PERSPECTIVE_ID;
-		}
+		return ApplicationWorkbenchAdvisor.PERSPECTIVE_ID;
 	}
 
 	@Override
