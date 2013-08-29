@@ -1,6 +1,0 @@
-[submodule "releng/config"]
-	path = releng/config
-	url = git@pinkman.villains.techma.com:eclipse/development-configuration
-[submodule "releng/pdebuild"]
-	path = releng/pdebuild
-	url = git@pinkman.villains.techma.com:eclipse/gov.redhawk.pdebuild.common
