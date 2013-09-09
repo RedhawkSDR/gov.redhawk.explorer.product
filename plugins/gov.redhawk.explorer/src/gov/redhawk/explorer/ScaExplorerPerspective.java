@@ -41,7 +41,7 @@ public class ScaExplorerPerspective implements IPerspectiveFactory {
 
 	public void createInitialLayout(final IPageLayout layout) {
 		String defaultExplorerViewId;
-		if (System.getProperty(ScaExplorerPerspective.PROP_SINGLE_DOMAIN_EXPLORER).equalsIgnoreCase("true")) {
+		if (Boolean.valueOf(System.getProperty(ScaExplorerPerspective.PROP_SINGLE_DOMAIN_EXPLORER))) {
 			defaultExplorerViewId = ScaExplorerPerspective.SCA_EXPLORER_SD_VIEW_ID;
 		} else {
 			defaultExplorerViewId = ScaExplorerPerspective.SCA_EXPLORER_VIEW_ID;

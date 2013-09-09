@@ -33,7 +33,7 @@
             name="SCA Explorer">
          <property
                name="appName"
-               value="Explorer">
+               value="SCA Explorer">
          </property>
          <property
                name="aboutImage"
