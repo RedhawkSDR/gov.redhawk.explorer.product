@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="SCA Explorer" uid="gov.redhawk.explorer.product" id="gov.redhawk.explorer.product" application="gov.redhawk.explorer.application" version="1.9.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="REDHAWK Explorer" uid="gov.redhawk.explorer.product" id="gov.redhawk.explorer.product" application="gov.redhawk.explorer.application" version="1.10.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/gov.redhawk.explorer/icons/alt_about.gif"/>
@@ -44,9 +44,9 @@
    </plugins>
 
    <features>
-      <feature id="gov.redhawk.explorer" version="1.9.0.qualifier"/>
-      <feature id="gov.redhawk.explorer.platform" version="1.9.0.qualifier"/>
-      <feature id="gov.redhawk.explorer.support" version="1.9.0.qualifier"/>
+      <feature id="gov.redhawk.explorer" version="1.10.0.qualifier"/>
+      <feature id="gov.redhawk.explorer.platform" version="1.10.0.qualifier"/>
+      <feature id="gov.redhawk.explorer.support" version="1.10.0.qualifier"/>
    </features>
 
    <configurations>
@@ -56,7 +56,7 @@
       <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="4" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
       <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="4" />
-      <property name="eclipse.buildId" value="${buildType}201304291610" />
+      <property name="eclipse.buildId" value="${buildType}${buildQualifier}" />
       <property name="osgi.instance.area" value="@user.home/.sca_explorer" />
    </configurations>
 
