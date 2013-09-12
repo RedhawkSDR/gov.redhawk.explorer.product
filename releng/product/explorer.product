@@ -56,7 +56,7 @@
       <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="4" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
       <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="4" />
-      <property name="eclipse.buildId" value="${buildType}201304291610" />
+      <property name="eclipse.buildId" value="${buildType}${buildQualifier}" />
       <property name="osgi.instance.area" value="@user.home/.sca_explorer" />
    </configurations>
 
