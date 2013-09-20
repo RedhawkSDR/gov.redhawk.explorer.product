@@ -5,7 +5,7 @@
       version="1.9.0.qualifier"
       provider-name="%providerName">
 
-   <description>
+   <description url="http://redhawksdr.org">
       %description
    </description>
 
