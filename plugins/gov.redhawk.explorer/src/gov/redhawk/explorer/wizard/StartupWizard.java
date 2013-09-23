@@ -120,6 +120,7 @@ public class StartupWizard extends Wizard implements INewWizard, IPageChangingLi
 
 		try {
 			getContainer().run(true, true, new IRunnableWithProgress() {
+				@Override
 				public void run(final IProgressMonitor monitor) throws InvocationTargetException, InterruptedException {
 					final int RETRY_COUNT = 5;
 					monitor.beginTask("Loading Waveform", RETRY_COUNT + 1);
@@ -161,6 +162,7 @@ public class StartupWizard extends Wizard implements INewWizard, IPageChangingLi
 							final IStatus status = new Status(IStatus.ERROR, Activator.PLUGIN_ID, message);
 							StatusManager.getManager().handle(status);
 							display.asyncExec(new Runnable() {
+								@Override
 								public void run() {
 									StartupWizard.this.domainPage.setErrorMessage(message);
 								}
@@ -171,6 +173,7 @@ public class StartupWizard extends Wizard implements INewWizard, IPageChangingLi
 						final ScaWaveform waveform = waves.get(0);
 						// Open the editor on the first waveform that matches in the StartupWizard.STARTUP_FILE_NAME
 						display.asyncExec(new Runnable() {
+							@Override
 							public void run() {
 								try {
 									final boolean useUri = !SWT.getPlatform().startsWith("rap");
@@ -197,6 +200,7 @@ public class StartupWizard extends Wizard implements INewWizard, IPageChangingLi
 			final IStatus status = new Status(IStatus.ERROR, Activator.PLUGIN_ID, msg, e.getCause());
 			StatusManager.getManager().handle(status);
 			display.asyncExec(new Runnable() {
+				@Override
 				public void run() {
 					StartupWizard.this.domainPage.setErrorMessage("Unable to open waveform");
 				}
@@ -221,6 +225,7 @@ public class StartupWizard extends Wizard implements INewWizard, IPageChangingLi
 		try {
 			getContainer().run(true, true, new IRunnableWithProgress() {
 
+				@Override
 				public void run(final IProgressMonitor monitor) throws InvocationTargetException, InterruptedException {
 					final int WAIT_TIME = 1000;
 					monitor.beginTask("Launching waveform " + waitLock, IProgressMonitor.UNKNOWN);
@@ -241,6 +246,7 @@ public class StartupWizard extends Wizard implements INewWizard, IPageChangingLi
 						if (launchJob.getWaveform() != null) {
 							display.asyncExec(new Runnable() {
 
+								@Override
 								public void run() {
 									try {
 										final boolean useUri = !SWT.getPlatform().startsWith("rap");
@@ -272,6 +278,7 @@ public class StartupWizard extends Wizard implements INewWizard, IPageChangingLi
 			final IStatus status = new Status(IStatus.ERROR, Activator.PLUGIN_ID, msg, e.getCause());
 			StatusManager.getManager().handle(status, StatusManager.SHOW);
 			display.asyncExec(new Runnable() {
+				@Override
 				public void run() {
 					StartupWizard.this.waveformPage.setErrorMessage("Unable to launch selected waveform.");
 				}
@@ -336,6 +343,7 @@ public class StartupWizard extends Wizard implements INewWizard, IPageChangingLi
 		return complete;
 	}
 
+	@Override
 	public void init(final IWorkbench workbench, final IStructuredSelection selection) {
 		// Pass
 	}
@@ -370,6 +378,7 @@ public class StartupWizard extends Wizard implements INewWizard, IPageChangingLi
 	 * Callback used to initialize the Start Waveform page before showing.
 	 * {@inheritDoc}
 	 */
+	@Override
 	public void handlePageChanging(final PageChangingEvent event) {
 		if (event.getTargetPage() == this.waveformPage) {
 			event.doit = initializeWavePage();

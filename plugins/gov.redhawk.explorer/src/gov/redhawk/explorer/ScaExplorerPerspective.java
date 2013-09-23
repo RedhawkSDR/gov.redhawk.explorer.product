@@ -39,6 +39,7 @@ public class ScaExplorerPerspective implements IPerspectiveFactory {
 
 	private static final String PROP_SINGLE_DOMAIN_EXPLORER = "gov.redhawk.sca.singledomain";
 
+	@Override
 	public void createInitialLayout(final IPageLayout layout) {
 		String defaultExplorerViewId;
 		if (Boolean.valueOf(System.getProperty(ScaExplorerPerspective.PROP_SINGLE_DOMAIN_EXPLORER))) {

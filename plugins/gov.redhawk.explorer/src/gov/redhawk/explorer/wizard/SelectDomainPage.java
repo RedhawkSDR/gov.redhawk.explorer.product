@@ -73,6 +73,7 @@ public class SelectDomainPage extends WizardPage {
 		this.parent = parent;
 	}
 
+	@Override
 	public void createControl(final Composite parent) {
 		final Composite container = new Composite(parent, SWT.NULL);
 		final GridLayout layout = new GridLayout(3, false);
@@ -96,6 +97,7 @@ public class SelectDomainPage extends WizardPage {
 		this.domainList.getViewer().setFilters(createDomainViewerFilter());
 		this.domainList.getViewer().setInput(ScaPlugin.getDefault().getDomainManagerRegistry());
 		this.domainList.getViewer().addSelectionChangedListener(new ISelectionChangedListener() {
+			@Override
 			public void selectionChanged(final SelectionChangedEvent event) {
 				boolean domainSelected = false;
 				boolean appsRunning = false;
@@ -124,10 +126,12 @@ public class SelectDomainPage extends WizardPage {
 		newButton.setText(" New... ");
 		newButton.setLayoutData(GridDataFactory.fillDefaults().create());
 		newButton.addSelectionListener(new SelectionListener() {
+			@Override
 			public void widgetDefaultSelected(final SelectionEvent e) {
 				widgetSelected(e);
 			}
 
+			@Override
 			public void widgetSelected(final SelectionEvent e) {
 				final ScaDomainManagerRegistry registry = ScaPlugin.getDefault().getDomainManagerRegistry();
 				final DomainEntryWizard wizard = new DomainEntryWizard();
@@ -139,6 +143,7 @@ public class SelectDomainPage extends WizardPage {
 					final Map<String, String> connectionProperties = Collections.singletonMap(ScaDomainManager.NAMING_SERVICE_PROP,
 					        wizard.getNameServiceInitRef());
 					ScaModelCommand.execute(registry, new ScaModelCommand() {
+						@Override
 						public void execute() {
 							registry.createDomain(wizard.getDomainName(), false, connectionProperties);
 						}
@@ -156,6 +161,7 @@ public class SelectDomainPage extends WizardPage {
 		this.mgr = (ScaDomainManager) selection.getFirstElement();
 		try {
 			getContainer().run(true, true, new IRunnableWithProgress() {
+				@Override
 				public void run(final IProgressMonitor monitor) throws InvocationTargetException, InterruptedException {
 					monitor.beginTask("Connecting to the domain", 2);
 					try {

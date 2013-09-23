@@ -71,6 +71,7 @@ public class StartWaveformPage extends WizardPage {
 	/**
 	 * {@inheritDoc}
 	 */
+	@Override
 	public void createControl(final Composite parent) {
 		final Composite container = new Composite(parent, SWT.NULL);
 		final GridLayout layout = new GridLayout();
@@ -85,6 +86,7 @@ public class StartWaveformPage extends WizardPage {
 		this.waveformType.setContentProvider(new ArrayContentProvider());
 		this.waveformType.setLabelProvider(new LabelProvider());
 		this.waveformType.addSelectionChangedListener(new ISelectionChangedListener() {
+			@Override
 			public void selectionChanged(final SelectionChangedEvent event) {
 				// If there is something selected, load the list of available waveforms
 				if (!event.getSelection().isEmpty()) {
@@ -119,6 +121,7 @@ public class StartWaveformPage extends WizardPage {
 			}
 		});
 		this.waveformList.addSelectionChangedListener(new ISelectionChangedListener() {
+			@Override
 			public void selectionChanged(final SelectionChangedEvent event) {
 				// Selecting a waveform indicates completability of the wizard
 				StartWaveformPage.this.setPageComplete(!event.getSelection().isEmpty());
