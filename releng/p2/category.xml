@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/gov.redhawk.explorer_1.9.0.qualifier.jar" id="gov.redhawk.explorer" version="1.9.0.qualifier">
+   <feature url="features/gov.redhawk.explorer_1.9.1.qualifier.jar" id="gov.redhawk.explorer" version="1.9.1.qualifier">
       <category name="gov.redhawk"/>
    </feature>
-   <feature url="features/gov.redhawk.explorer.source_1.9.0.qualifier.jar" id="gov.redhawk.explorer.source" version="1.9.0.qualifier">
+   <feature url="features/gov.redhawk.explorer.source_1.9.1.qualifier.jar" id="gov.redhawk.explorer.source" version="1.9.1.qualifier">
       <category name="gov.redhawk"/>
    </feature>
    <category-def name="gov.redhawk" label="REDHAWK"/>
