@@ -43,6 +43,7 @@ public class ApplicationWorkbenchAdvisor extends WorkbenchAdvisor {
 	class WorkbenchAdapterFactory implements IAdapterFactory {
 		private final Object resourceFactory = new ResourceFactory();
 
+		@Override
 		public Object getAdapter(final Object o, @SuppressWarnings("rawtypes") final Class adapterType) {
 			if (adapterType.isInstance(o)) {
 				return o;
@@ -57,6 +58,7 @@ public class ApplicationWorkbenchAdvisor extends WorkbenchAdvisor {
 			return null;
 		}
 
+		@Override
 		public Class< ? >[] getAdapterList() {
 			return new Class[] { IElementFactory.class, IPersistableElement.class };
 		}

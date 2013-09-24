@@ -61,6 +61,7 @@ public class ResourceFactory implements IElementFactory, IPersistableElement {
 	/**
 	 * @see IElementFactory
 	 */
+	@Override
 	public IAdaptable createElement(final IMemento memento) {
 		// Get the file name.
 		final String fileName = memento.getString(ResourceFactory.TAG_PATH);
@@ -93,6 +94,7 @@ public class ResourceFactory implements IElementFactory, IPersistableElement {
 	/**
 	 * @see IPersistableElement
 	 */
+	@Override
 	public String getFactoryId() {
 		return ResourceFactory.FACTORY_ID;
 	}
@@ -100,6 +102,7 @@ public class ResourceFactory implements IElementFactory, IPersistableElement {
 	/**
 	 * @see IPersistableElement
 	 */
+	@Override
 	public void saveState(final IMemento memento) {
 		memento.putString(ResourceFactory.TAG_PATH, this.res.getFullPath().toString());
 		memento.putString(ResourceFactory.TAG_TYPE, Integer.toString(this.res.getType()));
