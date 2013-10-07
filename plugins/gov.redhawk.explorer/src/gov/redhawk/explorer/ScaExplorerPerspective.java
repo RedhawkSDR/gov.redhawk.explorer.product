@@ -28,16 +28,16 @@ import org.eclipse.ui.IPerspectiveFactory;
  */
 public class ScaExplorerPerspective implements IPerspectiveFactory {
 
-	private static final String SCA_EXPLORER_VIEW_ID = ScaExplorer.VIEW_ID;
+	public static final String SCA_EXPLORER_VIEW_ID = ScaExplorer.VIEW_ID;
 	
-	private static final String SCA_EXPLORER_SD_VIEW_ID = ScaExplorerSingleDomain.VIEW_ID;
+	public static final String SCA_EXPLORER_SD_VIEW_ID = ScaExplorerSingleDomain.VIEW_ID;
 
 	private static final String NAMEBROWSER_VIEW_ID = NameBrowserView.ID;
 
 	/** The PDE Error Log view ID. */
 	private static final String PDE_ERROR_LOG_VIEW_ID = "org.eclipse.pde.runtime.LogView";
 
-	private static final String PROP_SINGLE_DOMAIN_EXPLORER = "gov.redhawk.sca.singledomain";
+	static final String PROP_SINGLE_DOMAIN_EXPLORER = "gov.redhawk.sca.singleDomain";
 
 	@Override
 	public void createInitialLayout(final IPageLayout layout) {
