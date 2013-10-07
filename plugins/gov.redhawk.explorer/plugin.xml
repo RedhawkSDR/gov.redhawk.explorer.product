@@ -36,10 +36,10 @@
          point="org.eclipse.core.runtime.products">
       <product
             application="gov.redhawk.explorer.application"
-            name="SCA Explorer">
+            name="REDHAWK Explorer">
          <property
                name="appName"
-               value="SCA Explorer">
+               value="REDHAWK Explorer">
          </property>
          <property
                name="aboutImage"
