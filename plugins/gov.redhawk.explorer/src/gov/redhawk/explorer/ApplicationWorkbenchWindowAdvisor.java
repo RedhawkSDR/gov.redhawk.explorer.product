@@ -14,8 +14,10 @@ import gov.redhawk.sca.ui.ScaUiPlugin;
 
 import org.eclipse.jface.action.IContributionItem;
 import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.preference.IPreferenceStore;
 import org.eclipse.swt.graphics.Point;
+import org.eclipse.ui.IPerspectiveDescriptor;
+import org.eclipse.ui.IPerspectiveRegistry;
+import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.application.ActionBarAdvisor;
 import org.eclipse.ui.application.IActionBarConfigurer;
 import org.eclipse.ui.application.IWorkbenchWindowConfigurer;
@@ -59,23 +61,17 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 		menuManager.update(true);
 		
 		/**
-		 * The property that specifies single-domain or multi-domain SCA Explorer view is tested only when the
-		 * perspective is initialized. So we reset the perspective if the property has changed since the
-		 * last time the application was launched.
+		 * Set the proper perspective in accordance with the System property used to specify whether
+		 * the multi-domain or single-domain SCA Explorer is used.
 		 */
-		IPreferenceStore prefs = ScaUiPlugin.getDefault().getScaPreferenceStore();
-		boolean singleDomain = Boolean.valueOf(System.getProperty(ScaExplorerPerspective.PROP_SINGLE_DOMAIN_EXPLORER));
-		String lastExplorerViewId = prefs.getString(KEY_LAST_SCA_EXPLORER_VIEW_ID);
-		String currentExplorerViewId = 
-				(singleDomain) ?  ScaExplorerPerspective.SCA_EXPLORER_SD_VIEW_ID :  ScaExplorerPerspective.SCA_EXPLORER_VIEW_ID;
-		if (lastExplorerViewId == null) {
-			getWindowConfigurer().getWindow().getActivePage().resetPerspective();
-			prefs.setValue(KEY_LAST_SCA_EXPLORER_VIEW_ID, currentExplorerViewId);
+		IPerspectiveRegistry registry = getWindowConfigurer().getWindow().getWorkbench().getPerspectiveRegistry();
+		IWorkbenchPage page = getWindowConfigurer().getWindow().getActivePage();
+		IPerspectiveDescriptor scaExplorerPerspective = registry.findPerspectiveWithId(ScaExplorerPerspective.PERSPECTIVE_ID);
+		IPerspectiveDescriptor scaExplorerSingleDomainPerspective = registry.findPerspectiveWithId(ScaExplorerSingleDomainPerspective.PERSPECTIVE_ID);
+		if (Boolean.valueOf(System.getProperty(ScaUiPlugin.PROP_SINGLE_DOMAIN))) {
+			page.setPerspective(scaExplorerSingleDomainPerspective);
 		} else {
-			if (!lastExplorerViewId.equals(currentExplorerViewId)) {
-				getWindowConfigurer().getWindow().getActivePage().resetPerspective();
-				prefs.setValue(KEY_LAST_SCA_EXPLORER_VIEW_ID, currentExplorerViewId);
-			}
+			page.setPerspective(scaExplorerPerspective);
 		}
 	}
 }

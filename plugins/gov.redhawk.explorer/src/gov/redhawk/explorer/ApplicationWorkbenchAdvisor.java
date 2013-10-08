@@ -12,6 +12,7 @@ package gov.redhawk.explorer;
 
 import gov.redhawk.explorer.internal.ResourceFactory;
 import gov.redhawk.explorer.wizard.StartupWizard;
+import gov.redhawk.sca.ui.ScaUiPlugin;
 
 import org.eclipse.core.resources.IResource;
 import org.eclipse.core.resources.IWorkspace;
@@ -36,8 +37,6 @@ import org.eclipse.ui.application.WorkbenchWindowAdvisor;
 import org.eclipse.ui.progress.WorkbenchJob;
 
 public class ApplicationWorkbenchAdvisor extends WorkbenchAdvisor {
-
-	private static final String PERSPECTIVE_ID = "gov.redhawk.explorer.perspective";
 
 	/* This class was essentially copied from org.eclipse.ide.internal */
 	class WorkbenchAdapterFactory implements IAdapterFactory {
@@ -96,7 +95,10 @@ public class ApplicationWorkbenchAdvisor extends WorkbenchAdvisor {
 
 	@Override
 	public String getInitialWindowPerspectiveId() {
-		return ApplicationWorkbenchAdvisor.PERSPECTIVE_ID;
+		if (Boolean.valueOf(System.getProperty(ScaUiPlugin.PROP_SINGLE_DOMAIN))) {
+			return ScaExplorerSingleDomainPerspective.PERSPECTIVE_ID;
+		}
+		return ScaExplorerPerspective.PERSPECTIVE_ID;
 	}
 
 	@Override

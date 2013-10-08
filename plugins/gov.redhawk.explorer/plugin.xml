@@ -25,6 +25,14 @@
    <extension
          point="org.eclipse.ui.perspectives">
       <perspective
+            class="gov.redhawk.explorer.ScaExplorerSingleDomainPerspective"
+            id="gov.redhawk.explorer_sd.perspective"
+            name="SCA Explorer (single Domain)">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
             class="gov.redhawk.explorer.ScaExplorerPerspective"
             fixed="false"
             id="gov.redhawk.explorer.perspective"
