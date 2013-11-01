@@ -10,7 +10,7 @@
  *******************************************************************************/
 package gov.redhawk.explorer;
 
-import gov.redhawk.sca.ui.views.ScaExplorer;
+import gov.redhawk.sca.ui.singledomain.views.ScaExplorerSingleDomain;
 import gov.redhawk.ui.views.namebrowser.view.NameBrowserView;
 
 import org.eclipse.ui.IFolderLayout;
@@ -25,45 +25,47 @@ import org.eclipse.ui.IPerspectiveFactory;
  * this prevents users from maximizing views and such. Instead, all of the views
  * should be set to not be closeable.
  */
-public class ScaExplorerPerspective implements IPerspectiveFactory {
+public class ScaExplorerSingleDomainPerspective implements IPerspectiveFactory {
+	
+	public static final String VIEW_ID = ScaExplorerSingleDomain.VIEW_ID;
+	
+	public static final String PERSPECTIVE_ID = "gov.redhawk.explorer_sd.perspective";
 
-	public static final String VIEW_ID = ScaExplorer.VIEW_ID;
-	
-	public static final String PERSPECTIVE_ID = "gov.redhawk.explorer.perspective";
-	
 	private static final String NAMEBROWSER_VIEW_ID = NameBrowserView.ID;
 
 	/** The PDE Error Log view ID. */
 	private static final String PDE_ERROR_LOG_VIEW_ID = "org.eclipse.pde.runtime.LogView";
 
+	static final String PROP_SINGLE_DOMAIN_EXPLORER = "gov.redhawk.sca.singleDomain";
 
 	@Override
 	public void createInitialLayout(final IPageLayout layout) {
+		
 		// Editors are placed for free.
 		final String editorArea = layout.getEditorArea();
 
 		final IFolderLayout left = layout.createFolder("left", IPageLayout.LEFT, (float) 0.35, editorArea);
 
-		left.addView(ScaExplorerPerspective.VIEW_ID);
-		left.addView(ScaExplorerPerspective.NAMEBROWSER_VIEW_ID);
+		left.addView(ScaExplorerSingleDomainPerspective.VIEW_ID);
+		left.addView(ScaExplorerSingleDomainPerspective.NAMEBROWSER_VIEW_ID);
 
 		final IFolderLayout bottom = layout.createFolder("bottom", IPageLayout.BOTTOM, (float) 0.60, editorArea);
 
 		bottom.addView(IPageLayout.ID_PROP_SHEET);
-		bottom.addView(ScaExplorerPerspective.PDE_ERROR_LOG_VIEW_ID);
+		bottom.addView(ScaExplorerSingleDomainPerspective.PDE_ERROR_LOG_VIEW_ID);
 
 		// DON'T USE A FIXED PERSPECTIVE BECAUSE IT DOESN'T ALLOW A VIEW
 		// TO BE MAXIMIZED/MINIMIZED.
 
 		// These are so important, don't let the operator close them.
-		layout.getViewLayout(ScaExplorerPerspective.VIEW_ID).setCloseable(false);
-		layout.getViewLayout(ScaExplorerPerspective.NAMEBROWSER_VIEW_ID).setCloseable(false);
+		layout.getViewLayout(ScaExplorerSingleDomainPerspective.VIEW_ID).setCloseable(false);
+		layout.getViewLayout(ScaExplorerSingleDomainPerspective.NAMEBROWSER_VIEW_ID).setCloseable(false);
 		layout.getViewLayout(IPageLayout.ID_PROP_SHEET).setCloseable(false);
-		layout.getViewLayout(ScaExplorerPerspective.PDE_ERROR_LOG_VIEW_ID).setCloseable(false);
+		layout.getViewLayout(ScaExplorerSingleDomainPerspective.PDE_ERROR_LOG_VIEW_ID).setCloseable(false);
 		// Don't let anything move
-		layout.getViewLayout(ScaExplorerPerspective.VIEW_ID).setMoveable(false);
-		layout.getViewLayout(ScaExplorerPerspective.NAMEBROWSER_VIEW_ID).setMoveable(false);
+		layout.getViewLayout(ScaExplorerSingleDomainPerspective.VIEW_ID).setMoveable(false);
+		layout.getViewLayout(ScaExplorerSingleDomainPerspective.NAMEBROWSER_VIEW_ID).setMoveable(false);
 		layout.getViewLayout(IPageLayout.ID_PROP_SHEET).setMoveable(false);
-		layout.getViewLayout(ScaExplorerPerspective.PDE_ERROR_LOG_VIEW_ID).setMoveable(false);
+		layout.getViewLayout(ScaExplorerSingleDomainPerspective.PDE_ERROR_LOG_VIEW_ID).setMoveable(false);
 	}
 }
