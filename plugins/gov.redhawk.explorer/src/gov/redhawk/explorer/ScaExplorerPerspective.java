@@ -27,8 +27,14 @@ import org.eclipse.ui.IPerspectiveFactory;
  */
 public class ScaExplorerPerspective implements IPerspectiveFactory {
 
+	/**
+	 * @since 1.10
+	 */
 	public static final String VIEW_ID = ScaExplorer.VIEW_ID;
 	
+	/**
+	 * @since 1.10
+	 */
 	public static final String PERSPECTIVE_ID = "gov.redhawk.explorer.perspective";
 	
 	private static final String NAMEBROWSER_VIEW_ID = NameBrowserView.ID;

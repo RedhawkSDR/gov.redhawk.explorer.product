@@ -24,6 +24,7 @@ import org.eclipse.ui.IPerspectiveFactory;
  * number of menu items as possible. However, the perspective is not fixed, as
  * this prevents users from maximizing views and such. Instead, all of the views
  * should be set to not be closeable.
+ * @since 1.10
  */
 public class ScaExplorerSingleDomainPerspective implements IPerspectiveFactory {
 	
@@ -35,8 +36,6 @@ public class ScaExplorerSingleDomainPerspective implements IPerspectiveFactory {
 
 	/** The PDE Error Log view ID. */
 	private static final String PDE_ERROR_LOG_VIEW_ID = "org.eclipse.pde.runtime.LogView";
-
-	static final String PROP_SINGLE_DOMAIN_EXPLORER = "gov.redhawk.sca.singleDomain";
 
 	@Override
 	public void createInitialLayout(final IPageLayout layout) {
