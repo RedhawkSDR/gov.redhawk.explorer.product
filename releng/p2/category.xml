@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-    <feature url="features/gov.redhawk.product.sca_explorer.feature" id="gov.redhawk.product.sca_explorer.feature" version="1.8.5.qualifier" >
+    <feature url="features/gov.redhawk.product.sca_explorer.feature" id="gov.redhawk.product.sca_explorer.feature" version="1.8.6.qualifier" >
         <category name="gov.redhawk"/>
     </feature>
-    <feature url="features/gov.redhawk.product.sca_explorer.feature.source" id="gov.redhawk.product.sca_explorer.feature.source" version="1.8.5.qualifier" >
+    <feature url="features/gov.redhawk.product.sca_explorer.feature.source" id="gov.redhawk.product.sca_explorer.feature.source" version="1.8.6.qualifier" >
         <category name="gov.redhawk"/>
     </feature>
     <category-def name="gov.redhawk" label="REDHAWK"/>
