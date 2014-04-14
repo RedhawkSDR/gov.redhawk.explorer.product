@@ -5,25 +5,21 @@
       version="1.9.1.qualifier"
       provider-name="%providerName">
 
-  <description url="http://redhawksdr.org">
-        %description
-  </description>
+   <description url="http://redhawksdr.org">
+      %description
+   </description>
 
-  <copyright url="http://redhawksdr.org">
-        %copyright
-  </copyright>
+   <copyright url="http://redhawksdr.org">
+      %copyright
+   </copyright>
 
-  <license url="%licenseURL">
-        %license
-  </license>
+   <license url="%licenseURL">
+      %license
+   </license>
 
-   <includes
-         id="org.eclipse.rcp"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.rcp.source"
-         version="0.0.0"/>
+   <requires>
+      <import feature="org.eclipse.rcp" version="3.8.2" match="compatible"/>
+   </requires>
 
    <plugin
          id="org.eclipse.compare.core"
