@@ -148,10 +148,6 @@
          version="0.0.0"/>
 
    <includes
-         id="gov.redhawk.core"
-         version="0.0.0"/>
-
-   <includes
          id="org.jacorb"
          version="0.0.0"/>
 
