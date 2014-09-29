@@ -18,8 +18,8 @@
    </license>
 
    <requires>
-      <import feature="org.eclipse.rcp" version="3.8.2" match="compatible"/>
-      <import feature="org.eclipse.rcp.source" version="3.8.2" match="compatible"/>
+      <import feature="org.eclipse.rcp"/>
+      <import feature="org.eclipse.rcp.source"/>
    </requires>
 
    <plugin
