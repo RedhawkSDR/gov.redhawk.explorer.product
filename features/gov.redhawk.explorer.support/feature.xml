@@ -140,10 +140,6 @@
          version="0.0.0"/>
 
    <includes
-         id="gov.redhawk.rcp.sdk"
-         version="0.0.0"/>
-
-   <includes
          id="gov.redhawk.core.sdk"
          version="0.0.0"/>
 
