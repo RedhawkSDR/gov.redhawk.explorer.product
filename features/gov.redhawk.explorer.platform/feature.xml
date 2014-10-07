@@ -22,6 +22,14 @@
       <import feature="org.eclipse.rcp.source"/>
    </requires>
 
+   <!-- plugins from org.eclipse.platform.feature.group, plus source, minus a few to make things simpler -->
+
+   <!-- Exclude org.apache.ant -->
+
+   <!-- Exclude org.eclipse.ant.core -->
+
+   <!-- Exclude com.jcraft.jsch -->
+
    <plugin
          id="org.eclipse.compare.core"
          download-size="0"
@@ -53,13 +61,6 @@
    <plugin
          id="org.eclipse.compare.win32"
          os="win32"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.core.boot"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -202,6 +203,10 @@
          version="0.0.0"
          unpack="false"/>
 
+   <!-- Exclude org.eclipse.debug.core -->
+
+   <!-- Exclude org.eclipse.debug.ui -->
+
    <plugin
          id="org.eclipse.equinox.event"
          download-size="0"
@@ -216,19 +221,9 @@
          version="0.0.0"
          unpack="false"/>
 
-   <plugin
-         id="org.eclipse.help.appserver"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
+  <!-- Exclude org.eclipse.ltk.core.refactoring -->
 
-   <plugin
-         id="org.eclipse.help.appserver.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
+  <!-- Exclude org.eclipse.ltk.ui.refactoring -->
 
    <plugin
          id="org.eclipse.platform"
@@ -241,6 +236,8 @@
          download-size="0"
          install-size="0"
          version="0.0.0"/>
+
+   <!-- Exclude org.eclipse.platform.doc.user -->
 
    <plugin
          id="org.eclipse.search"
@@ -255,6 +252,10 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+
+   <!-- Exclude org.eclipse.team.core -->
+
+   <!-- Exclude org.eclipse.team.ui -->
 
    <plugin
          id="org.eclipse.text"
@@ -284,6 +285,10 @@
          version="0.0.0"
          unpack="false"/>
 
+   <!-- Exclude org.eclipse.jsch.core -->
+
+   <!-- Exclude org.eclipse.jsch.ui -->
+
    <plugin
          id="org.eclipse.ui.console"
          download-size="0"
@@ -293,20 +298,6 @@
 
    <plugin
          id="org.eclipse.ui.console.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.ui.presentations.r21"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.ui.presentations.r21.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -450,6 +441,24 @@
          version="0.0.0"
          unpack="false"/>
 
+   <!-- Exclude org.eclipse.ui.externaltools -->
+
+   <plugin
+         id="org.eclipse.ui.ide"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.ide.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <!-- Exclude org.eclipse.ui.ide.application -->
+
    <plugin
          id="org.eclipse.ui.win32"
          ws="win32"
@@ -458,61 +467,6 @@
          version="0.0.0"
          fragment="true"
          unpack="false"/>
-
-   <plugin
-         id="org.eclipse.update.core"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.update.core.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.update.scheduler"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.update.scheduler.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.update.ui"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.update.ui.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.ui.workbench.compatibility"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         fragment="true"/>
-
-   <plugin
-         id="org.eclipse.ui.workbench.compatibility.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
 
    <plugin
          id="org.eclipse.core.filesystem.aix.ppc"
@@ -525,9 +479,9 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.core.filesystem.hpux.ia64_32"
-         os="hpux"
-         arch="ia64_32"
+         id="org.eclipse.core.filesystem.aix.ppc64"
+         os="aix"
+         arch="ppc64"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -535,9 +489,9 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.core.filesystem.linux.ppc"
-         os="linux"
-         arch="ppc"
+         id="org.eclipse.core.filesystem.hpux.ia64"
+         os="hpux"
+         arch="ia64"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -604,9 +558,49 @@
          unpack="false"/>
 
    <plugin
+         id="org.eclipse.core.resources.win32.x86_64"
+         os="win32"
+         arch="x86_64"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
          id="org.eclipse.core.filesystem.win32.x86_64"
          os="win32"
          arch="x86_64"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.core.filesystem.linux.ppc"
+         os="linux"
+         arch="ppc"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.core.filesystem.linux.ppc64"
+         os="linux"
+         arch="ppc64"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.core.filesystem.linux.ppc64le"
+         os="linux"
+         arch="ppc64le"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -639,25 +633,6 @@
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.update.core.linux"
-         os="linux"
-         arch="x86"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         fragment="true"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.update.core.win32"
-         os="win32"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         fragment="true"
          unpack="false"/>
 
    <plugin
@@ -713,18 +688,8 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.equinox.security.macosx"
-         os="macosx"
-         arch="x86"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         fragment="true"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.equinox.security.macosx"
-         os="macosx"
+         id="org.eclipse.equinox.security.win32.x86_64"
+         os="win32"
          arch="x86_64"
          download-size="0"
          install-size="0"
@@ -735,25 +700,20 @@
    <plugin
          id="org.eclipse.equinox.security.macosx"
          os="macosx"
-         arch="ppc"
          download-size="0"
          install-size="0"
          version="0.0.0"
          fragment="true"
          unpack="false"/>
 
-   <plugin
-         id="org.eclipse.ui.ide"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
+   <!-- Exclude org.eclipse.ui.externaltools -->
 
-   <plugin
-         id="org.eclipse.ui.ide.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
+   <!-- Exclude org.eclipse.ui.themes -->
+
+   <!-- Exclude org.eclipse.core.filesystem.java7 -->
+
+   <!-- Exclude org.eclipse.platform.feature.jar -->
+
+   <!-- Exclude org.eclipse.platform_root -->
 
 </feature>
