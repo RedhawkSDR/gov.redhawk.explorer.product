@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="SCA Explorer" uid="gov.redhawk.explorer" id="gov.redhawk.product.sca_explorer.sca_explorer" application="gov.redhawk.product.sca_explorer.application" version="1.8.6.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="SCA Explorer" uid="gov.redhawk.explorer" id="gov.redhawk.product.sca_explorer.sca_explorer" application="gov.redhawk.product.sca_explorer.application" version="1.8.8.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/gov.redhawk.product.sca_explorer/icons/alt_about.gif"/>
@@ -46,9 +46,9 @@
    </plugins>
 
    <features>
-      <feature id="gov.redhawk.product.sca_explorer.feature" version="1.8.6.qualifier"/>
-      <feature id="gov.redhawk.sca_explorer.eclipse.platform" version="1.8.6.qualifier"/>
-      <feature id="gov.redhawk.sca_explorer.support" version="1.8.6.qualifier"/>
+      <feature id="gov.redhawk.product.sca_explorer.feature" version="1.8.8.qualifier"/>
+      <feature id="gov.redhawk.sca_explorer.eclipse.platform" version="1.8.8.qualifier"/>
+      <feature id="gov.redhawk.sca_explorer.support" version="1.8.8.qualifier"/>
    </features>
 
    <configurations>
