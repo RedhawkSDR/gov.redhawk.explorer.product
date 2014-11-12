@@ -21,7 +21,6 @@
 
    <requires>
       <import feature="gov.redhawk.core" version="1.11.0" match="compatible"/>
-      <import feature="gov.redhawk.rcp" version="1.11.0" match="compatible"/>
       <import feature="mil.jpeojtrs.sca" version="2.2.2" match="compatible"/>
       <import feature="nxm" version="3.4.1" match="compatible"/>
       <import feature="nxm.rcp.ui" version="1.1.0" match="compatible"/>
