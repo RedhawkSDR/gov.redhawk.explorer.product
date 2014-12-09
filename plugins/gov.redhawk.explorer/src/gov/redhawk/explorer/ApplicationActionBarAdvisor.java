@@ -10,6 +10,7 @@
  *******************************************************************************/
 package gov.redhawk.explorer;
 
+import org.eclipse.jface.action.GroupMarker;
 import org.eclipse.jface.action.IMenuManager;
 import org.eclipse.jface.action.MenuManager;
 import org.eclipse.jface.action.Separator;
@@ -55,21 +56,34 @@ public class ApplicationActionBarAdvisor extends ActionBarAdvisor {
 
 	@Override
 	protected void fillMenuBar(final IMenuManager menuBar) {
+		menuBar.add(createFileMenu());
+		menuBar.add(new GroupMarker(IWorkbenchActionConstants.MB_ADDITIONS));
+		menuBar.add(createHelpMenu());
+	}
+
+	/**
+	 * Creates and returns the File menu.
+	 */
+	private MenuManager createFileMenu() {
 		final MenuManager fileMenu = new MenuManager("&File", IWorkbenchActionConstants.M_FILE);
 		fileMenu.add(new Separator(IWorkbenchActionConstants.MB_ADDITIONS));
 		fileMenu.add(this.preferencesAction);
 		fileMenu.add(new Separator());
 		fileMenu.add(this.exitAction);
+		return fileMenu;
+	}
 
+	/**
+	 * Creates and returns the Help menu.
+	 */
+	private MenuManager createHelpMenu() {
 		final MenuManager helpMenu = new MenuManager("&Help", IWorkbenchActionConstants.M_HELP);
 		helpMenu.add(this.helpContentsAction);
 		helpMenu.add(this.helpSearchAction);
 		helpMenu.add(new Separator(IWorkbenchActionConstants.MB_ADDITIONS));
 		helpMenu.add(new Separator());
 		helpMenu.add(this.aboutAction);
-
-		menuBar.add(fileMenu);
-		menuBar.add(helpMenu);
+		return helpMenu;
 	}
 
 }
