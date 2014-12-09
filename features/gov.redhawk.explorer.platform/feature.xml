@@ -23,7 +23,7 @@
       <import feature="org.eclipse.wst.xml_ui.feature"/>
    </requires>
 
-   <!-- plugins from org.eclipse.platform.feature.group, plus source, minus a few to make things simpler -->
+   <!-- plugins from org.eclipse.platform.feature.group, minus a few to make things simpler -->
 
    <!-- Exclude org.apache.ant -->
 
@@ -142,26 +142,12 @@
          version="0.0.0"
          unpack="false"/>
 
-   <plugin
-         id="org.eclipse.osgi.util.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
    <!-- Exclude org.eclipse.debug.core -->
 
    <!-- Exclude org.eclipse.debug.ui -->
 
    <plugin
          id="org.eclipse.equinox.event"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.equinox.event.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -177,23 +163,10 @@
          install-size="0"
          version="0.0.0"/>
 
-   <plugin
-         id="org.eclipse.platform.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
-
    <!-- Exclude org.eclipse.platform.doc.user -->
 
    <plugin
          id="org.eclipse.search"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.search.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -217,26 +190,12 @@
          version="0.0.0"
          unpack="false"/>
 
-   <plugin
-         id="org.eclipse.jface.text.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
    <!-- Exclude org.eclipse.jsch.core -->
 
    <!-- Exclude org.eclipse.jsch.ui -->
 
    <plugin
          id="org.eclipse.ui.console"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.ui.console.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -311,24 +270,10 @@
          version="0.0.0"
          unpack="false"/>
 
-   <plugin
-         id="org.eclipse.ui.editors.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
    <!-- Exclude org.eclipse.ui.externaltools -->
 
    <plugin
          id="org.eclipse.ui.ide"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.ui.ide.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -492,21 +437,7 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.core.variables.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="org.eclipse.ui.forms"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.ui.forms.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
