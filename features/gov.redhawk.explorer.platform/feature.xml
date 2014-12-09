@@ -18,8 +18,9 @@
    </license>
 
    <requires>
+      <import feature="org.eclipse.emf.ecore.xcore"/>
       <import feature="org.eclipse.rcp"/>
-      <import feature="org.eclipse.rcp.source"/>
+      <import feature="org.eclipse.wst.xml_ui.feature"/>
    </requires>
 
    <!-- plugins from org.eclipse.platform.feature.group, plus source, minus a few to make things simpler -->
@@ -38,21 +39,7 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.compare.core.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="org.eclipse.compare"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.compare.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -74,13 +61,6 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.core.filebuffers.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="org.eclipse.core.filesystem"
          download-size="0"
          install-size="0"
@@ -88,21 +68,7 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.core.filesystem.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="org.eclipse.core.net"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.core.net.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -156,21 +122,7 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.core.resources.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="org.eclipse.core.runtime.compatibility"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.core.runtime.compatibility.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -182,12 +134,6 @@
          install-size="0"
          version="0.0.0"
          fragment="true"/>
-
-   <plugin
-         id="org.eclipse.core.runtime.compatibility.registry.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
 
    <plugin
          id="org.eclipse.osgi.util"
@@ -265,13 +211,6 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.text.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="org.eclipse.jface.text"
          download-size="0"
          install-size="0"
@@ -311,33 +250,13 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.ui.intro.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="org.eclipse.ui.intro.universal"
          download-size="0"
          install-size="0"
          version="0.0.0"/>
 
    <plugin
-         id="org.eclipse.ui.intro.universal.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
-
-   <plugin
          id="org.eclipse.ui.cheatsheets"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.ui.cheatsheets.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -351,21 +270,7 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.ui.browser.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="org.eclipse.ui.navigator"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.ui.navigator.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -379,21 +284,7 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.ui.navigator.resources.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="org.eclipse.ui.net"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.ui.net.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -407,21 +298,7 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.ui.workbench.texteditor.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="org.eclipse.ui.views"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.ui.views.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -643,13 +520,6 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.ui.views.properties.tabbed.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="org.eclipse.equinox.security"
          download-size="0"
          install-size="0"
@@ -657,21 +527,7 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.equinox.security.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="org.eclipse.equinox.security.ui"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.equinox.security.ui.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
