@@ -18,6 +18,7 @@
    </license>
 
    <requires>
+      <import feature="org.eclipse.emf.ecore.xcore" version="1.0.2" match="compatible"/>
       <import feature="org.eclipse.rcp" version="3.8.2" match="compatible"/>
       <import feature="org.eclipse.wst.xml_ui.feature" version="3.4.2" match="compatible"/>
    </requires>
