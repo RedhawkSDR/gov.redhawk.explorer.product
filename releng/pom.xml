@@ -15,7 +15,7 @@
      <properties>
         <tycho.scmUrl>scm:git:https://github.com/RedhawkSDR/eclipse-products-gov.redhawk.explorer.product.git</tycho.scmUrl>
         <eclipse>http://download.eclipse.org/releases/helios</eclipse>
-        <orbit>http://download.eclipse.org/tools/orbit/downloads/drops/R20130118183705/repository</orbit>
+        <orbit>http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository</orbit>
         <mil.jpeojtrs.sca>http://download.redhawksdr.org/mil.jpeojtrs.sca/releases/1.8</mil.jpeojtrs.sca>
         <gov.redhawk.core>http://download.redhawksdr.org/gov.redhawk.core/releases/1.8</gov.redhawk.core>
         <redhawk-core-framework>http://download.redhawksdr.org/redhawk-core-framework/releases/1.8</redhawk-core-framework>
@@ -23,7 +23,7 @@
         <nxm-rcp>http://download.redhawksdr.org/nxm-rcp/releases/1.0</nxm-rcp>
         <rcp-patch>http://download.redhawksdr.org/rcp-patch</rcp-patch>
         <rcp-patch-source>http://download.redhawksdr.org/rcp-patch-source</rcp-patch-source>
-		<jacorb>http://download.redhawksdr.org/jacorb/releases/3.1</jacorb>
+        <jacorb>http://download.redhawksdr.org/jacorb/updates/stable</jacorb>
     </properties>
 
     <repositories>
