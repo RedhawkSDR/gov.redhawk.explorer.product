@@ -24,6 +24,7 @@
         <rcp-patch>http://download.redhawksdr.org/rcp-patch</rcp-patch>
         <rcp-patch-source>http://download.redhawksdr.org/rcp-patch-source</rcp-patch-source>
         <jacorb>http://download.redhawksdr.org/jacorb/updates/stable</jacorb>
+        <logback>http://download.redhawksdr.org/logback/latest</logback>
     </properties>
 
     <repositories>
@@ -81,10 +82,16 @@
             <url>${rcp-patch-source}</url>
         </repository>
         
-         <repository>
+        <repository>
             <id>org.omg.jacorb</id>
             <layout>p2</layout>
             <url>${jacorb}</url>
+        </repository>
+
+        <repository>
+            <id>logback</id>
+            <layout>p2</layout>
+            <url>${logback}</url>
         </repository>
     </repositories>
 
