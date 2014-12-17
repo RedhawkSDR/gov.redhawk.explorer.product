@@ -19,6 +19,14 @@
       %description
    </description>
 
+   <copyright url="http://redhawksdr.org">
+      %copyright
+   </copyright>
+
+   <license url="http://redhawksdr.org">
+      %license
+   </license>
+
    <requires>
       <import feature="gov.redhawk.core.ui" version="1.11.0" match="compatible"/>
       <import feature="mil.jpeojtrs.sca" version="2.2.2" match="compatible"/>
