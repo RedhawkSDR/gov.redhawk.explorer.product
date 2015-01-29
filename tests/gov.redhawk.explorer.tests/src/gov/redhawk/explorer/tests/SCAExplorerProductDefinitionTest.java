@@ -1,11 +1,11 @@
 /*******************************************************************************
- * This file is protected by Copyright. 
+ * This file is protected by Copyright.
  * Please refer to the COPYRIGHT file distributed with this source distribution.
  *
  * This file is part of REDHAWK IDE.
  *
- * All rights reserved.  This program and the accompanying materials are made available under 
- * the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at 
+ * All rights reserved.  This program and the accompanying materials are made available under
+ * the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  *******************************************************************************/
 package gov.redhawk.explorer.tests;
@@ -45,7 +45,7 @@ public class SCAExplorerProductDefinitionTest {
 	/**
 	 * Parse the sca_explorer.product file and build list of items under the
 	 * configurations node.
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Before
@@ -59,7 +59,7 @@ public class SCAExplorerProductDefinitionTest {
 
 	/**
 	 * Tear down the builder and configElements list between tests.
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@After
@@ -116,7 +116,7 @@ public class SCAExplorerProductDefinitionTest {
 
 	/**
 	 * Parses the ide.product file.
-	 * 
+	 *
 	 * @return the {@link Document} resulting from parsing the ide.product file
 	 * @throws SAXException
 	 * @throws IOException
@@ -133,7 +133,7 @@ public class SCAExplorerProductDefinitionTest {
 
 	/**
 	 * Builds a list of {@link Node} under the "configurations" element.
-	 * 
+	 *
 	 * @param document the {@link Document} associated with the ide.product file
 	 */
 	private void buildConfigElementList(final Document document) {
