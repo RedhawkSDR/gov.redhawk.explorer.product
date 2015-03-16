@@ -2,6 +2,7 @@
 <?pde version="3.5"?>
 
 <product name="REDHAWK Explorer" uid="gov.redhawk.explorer.product" id="gov.redhawk.explorer.product" application="gov.redhawk.explorer.application" version="2.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+
    <aboutInfo>
       <image path="/gov.redhawk.explorer/icons/alt_about.gif"/>
       <text>
@@ -24,8 +25,9 @@
 -Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer
 -Djacorb.config.dir=configuration
 -Dosgi.requiredJavaVersion=1.7
-</vmArgs>
-      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+      </vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
    </launcherArgs>
 
    <windowImages i16="/gov.redhawk.explorer/icons/alt_window_16.gif" i32="/gov.redhawk.explorer/icons/alt_window_32.gif"/>
@@ -37,7 +39,6 @@
       </win>
    </launcher>
 
-
    <vm>
    </vm>
 
@@ -45,9 +46,9 @@
    </plugins>
 
    <features>
-      <feature id="gov.redhawk.explorer"/>
-      <feature id="gov.redhawk.explorer.platform"/>
-      <feature id="gov.redhawk.explorer.support"/>
+      <feature id="gov.redhawk.explorer" version="2.0.0.qualifier"/>
+      <feature id="gov.redhawk.explorer.platform" version="2.0.0.qualifier"/>
+      <feature id="gov.redhawk.explorer.support" version="2.0.0.qualifier"/>
    </features>
 
    <configurations>
