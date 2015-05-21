@@ -31,7 +31,6 @@
     <mil.jpeojtrs.sca>http://download.redhawksdr.org/mil.jpeojtrs.sca/releases/2.0</mil.jpeojtrs.sca>
     <gov.redhawk.core>http://download.redhawksdr.org/gov.redhawk.core/releases/2.0</gov.redhawk.core>
     <jacorb>http://download.redhawksdr.org/jacorb/updates/stable</jacorb>
-    <logback>http://download.redhawksdr.org/logback/latest</logback>
     <nebula>http://download.eclipse.org/technology/nebula/archives/Q32014/release</nebula>
     <eclipse>http://download.eclipse.org/releases/mars/</eclipse>
   </properties>
@@ -77,12 +76,6 @@
       <id>org.omg.jacorb</id>
       <layout>p2</layout>
       <url>${jacorb}</url>
-    </repository>
-
-    <repository>
-      <id>logback</id>
-      <layout>p2</layout>
-      <url>${logback}</url>
     </repository>
 
     <repository>
