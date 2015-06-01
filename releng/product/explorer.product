@@ -14,7 +14,7 @@
    </configIni>
 
    <launcherArgs>
-      <vmArgs>-Xms40m
+      <vmArgs>-Xms256m
 -Xmx512m
 -XX:MaxPermSize=256m
 -Dcom.sun.CORBA.transport.ORBUseNIOSelectToWait=false
