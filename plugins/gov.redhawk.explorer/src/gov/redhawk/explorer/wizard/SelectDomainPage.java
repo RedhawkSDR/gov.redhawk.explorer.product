@@ -95,7 +95,7 @@ public class SelectDomainPage extends WizardPage {
 			}
 		});
 		this.domainList.getViewer().setFilters(createDomainViewerFilter());
-		this.domainList.getViewer().setInput(ScaPlugin.getDefault().getDomainManagerRegistry());
+		this.domainList.getViewer().setInput(ScaPlugin.getDefault().getDomainManagerRegistry(null));
 		this.domainList.getViewer().addSelectionChangedListener(new ISelectionChangedListener() {
 			@Override
 			public void selectionChanged(final SelectionChangedEvent event) {
@@ -133,7 +133,7 @@ public class SelectDomainPage extends WizardPage {
 
 			@Override
 			public void widgetSelected(final SelectionEvent e) {
-				final ScaDomainManagerRegistry registry = ScaPlugin.getDefault().getDomainManagerRegistry();
+				final ScaDomainManagerRegistry registry = ScaPlugin.getDefault().getDomainManagerRegistry(null);
 				final DomainEntryWizard wizard = new DomainEntryWizard();
 				wizard.setShowExtraSettings(false);
 				wizard.setRegistry(registry);
@@ -145,7 +145,7 @@ public class SelectDomainPage extends WizardPage {
 					ScaModelCommand.execute(registry, new ScaModelCommand() {
 						@Override
 						public void execute() {
-							registry.createDomain(wizard.getDomainName(), false, connectionProperties);
+							registry.createDomain(wizard.getLocalDomainName(), wizard.getDomainName(), false, connectionProperties);
 						}
 					});
 				}

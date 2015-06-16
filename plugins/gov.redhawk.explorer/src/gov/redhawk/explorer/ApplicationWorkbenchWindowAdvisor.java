@@ -42,7 +42,6 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 		configurer.setInitialSize(new Point(1024, 768)); // SUPPRESS CHECKSTYLE MagicNumber
 		configurer.setShowCoolBar(false);
 		configurer.setShowStatusLine(true);
-		configurer.setShowFastViewBars(false);
 		configurer.setShowProgressIndicator(true);
 		configurer.setTitle("SCA Explorer");
 	}
