@@ -25,8 +25,6 @@ import org.eclipse.ui.application.WorkbenchWindowAdvisor;
 
 public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 
-	private static final String KEY_LAST_SCA_EXPLORER_VIEW_ID = "lastScaExplorerViewId";
-
 	public ApplicationWorkbenchWindowAdvisor(final IWorkbenchWindowConfigurer configurer) {
 		super(configurer);
 	}

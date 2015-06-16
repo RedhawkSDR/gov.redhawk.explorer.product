@@ -107,7 +107,7 @@ public class SelectDomainPage extends WizardPage {
 						domainSelected = true;
 						try {
 							appsRunning = SelectDomainPage.this.mgr.applications().length > 0;
-						} catch (final Exception e) {
+						} catch (final Exception e) { // SUPPRESS CHECKSTYLE TODO: Figure out a better catch than Exception
 							// PASS - You can connect to a domain that isn't up but is in the NameService
 						}
 					}
