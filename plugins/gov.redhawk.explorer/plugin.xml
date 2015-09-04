@@ -27,7 +27,7 @@
       <perspective
             class="gov.redhawk.explorer.ScaExplorerSingleDomainPerspective"
             id="gov.redhawk.explorer_sd.perspective"
-            name="SCA Explorer (single Domain)">
+            name="REDHAWK Explorer (single domain)">
       </perspective>
    </extension>
    <extension

@@ -18,7 +18,7 @@ import org.eclipse.ui.IPageLayout;
 import org.eclipse.ui.IPerspectiveFactory;
 
 /**
- * This perspective is used to provide a simple browser interface to an SCA
+ * This perspective is used to provide a simple browser interface to an REDHAWK
  * domain. It should strive for simplicity as the most important characteristic.
  * The UI should be heavily filtered using Activities to present the fewest
  * number of menu items as possible. However, the perspective is not fixed, as

@@ -41,7 +41,7 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 		configurer.setShowCoolBar(false);
 		configurer.setShowStatusLine(true);
 		configurer.setShowProgressIndicator(true);
-		configurer.setTitle("SCA Explorer");
+		configurer.setTitle("REDHAWK Explorer");
 	}
 
 	@Override
@@ -59,7 +59,7 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 		
 		/**
 		 * Set the proper perspective in accordance with the System property used to specify whether
-		 * the multi-domain or single-domain SCA Explorer is used.
+		 * the multi-domain or single-domain REDHAWK Explorer is used.
 		 */
 		IPerspectiveRegistry registry = getWindowConfigurer().getWindow().getWorkbench().getPerspectiveRegistry();
 		IWorkbenchPage page = getWindowConfigurer().getWindow().getActivePage();
