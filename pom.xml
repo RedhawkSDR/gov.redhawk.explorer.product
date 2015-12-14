@@ -12,7 +12,7 @@
 -->
     <modelVersion>4.0.0</modelVersion>
     <groupId>gov.redhawk.explorer.rcp</groupId>
-    <artifactId>releng</artifactId>
+    <artifactId>gov.redhawk.explorer.product.parent</artifactId>
     <version>1.8.10-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -107,12 +107,12 @@
 
 
     <modules>
-        <module>../features/gov.redhawk.product.sca_explorer.feature</module>
-        <module>../features/gov.redhawk.sca_explorer.support.feature</module>
-        <module>../features/gov.redhawk.sca_explorer.eclipse.platform.feature</module>
-        <module>../plugins/gov.redhawk.product.sca_explorer</module>
-        <module>p2</module>
-        <module>product</module>
+        <module>features/gov.redhawk.product.sca_explorer.feature</module>
+        <module>features/gov.redhawk.sca_explorer.support.feature</module>
+        <module>features/gov.redhawk.sca_explorer.eclipse.platform.feature</module>
+        <module>plugins/gov.redhawk.product.sca_explorer</module>
+        <module>releng/p2</module>
+        <module>releng/product</module>
     </modules>
 
     <build>

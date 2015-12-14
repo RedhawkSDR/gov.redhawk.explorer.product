@@ -15,8 +15,9 @@
     <packaging>eclipse-repository</packaging>
     <groupId>gov.redhawk.explorer.rcp.product</groupId>
     <parent>
+        <relativePath>../..</relativePath>
         <groupId>gov.redhawk.explorer.rcp</groupId>
-        <artifactId>releng</artifactId>
+        <artifactId>gov.redhawk.explorer.product.parent</artifactId>
         <version>1.8.10-SNAPSHOT</version>
     </parent>
 
