@@ -15,9 +15,9 @@
 	<packaging>eclipse-feature</packaging>
 	<parent>
 		<groupId>gov.redhawk.explorer</groupId>
-		<artifactId>releng</artifactId>
+		<artifactId>gov.redhawk.explorer.product.parent</artifactId>
 		<version>1.9.1-SNAPSHOT</version>
-		<relativePath>../../releng</relativePath>
+		<relativePath>../..</relativePath>
 	</parent>
 
     <build>

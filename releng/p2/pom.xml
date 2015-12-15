@@ -13,8 +13,9 @@
   <artifactId>gov.redhawk.explorer.p2</artifactId>
   <packaging>eclipse-repository</packaging>
   <parent>
+    <relativePath>../..</relativePath>
     <groupId>gov.redhawk.explorer</groupId>
-    <artifactId>releng</artifactId>
+    <artifactId>gov.redhawk.explorer.product.parent</artifactId>
     <version>1.9.1-SNAPSHOT</version>
   </parent>
 </project>
