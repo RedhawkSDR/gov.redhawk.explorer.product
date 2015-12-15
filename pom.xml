@@ -12,7 +12,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>gov.redhawk.explorer</groupId>
-  <artifactId>releng</artifactId>
+  <artifactId>gov.redhawk.explorer.product.parent</artifactId>
   <version>1.10.2-SNAPSHOT</version>
   <packaging>pom</packaging>
 
@@ -107,11 +107,11 @@
   </repositories>
 
   <modules>
-    <module>../features/gov.redhawk.explorer.feature</module>
-    <module>../features/gov.redhawk.explorer.platform</module>
-    <module>../features/gov.redhawk.explorer.support</module>
-    <module>../plugins/gov.redhawk.explorer</module>
-    <module>p2</module>
-    <module>product</module>
+    <module>features/gov.redhawk.explorer.feature</module>
+    <module>features/gov.redhawk.explorer.platform</module>
+    <module>features/gov.redhawk.explorer.support</module>
+    <module>plugins/gov.redhawk.explorer</module>
+    <module>releng/p2</module>
+    <module>releng/product</module>
   </modules>
 </project>

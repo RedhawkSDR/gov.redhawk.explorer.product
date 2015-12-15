@@ -17,8 +17,8 @@
 
   <parent>
     <groupId>gov.redhawk.explorer</groupId>
-    <artifactId>releng</artifactId>
+    <artifactId>gov.redhawk.explorer.product.parent</artifactId>
     <version>1.10.2-SNAPSHOT</version>
-    <relativePath>../../releng</relativePath>
+    <relativePath>../..</relativePath>
   </parent>
 </project>
