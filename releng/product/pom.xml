@@ -22,14 +22,14 @@
 -->
   <modelVersion>4.0.0</modelVersion>
   <artifactId>gov.redhawk.explorer.product</artifactId>
-  <version>1.10.2-SNAPSHOT</version>
+  <version>1.10.3-SNAPSHOT</version>
   <packaging>eclipse-repository</packaging>
   <groupId>gov.redhawk.explorer.product</groupId>
   <parent>
     <relativePath>../..</relativePath>
     <groupId>gov.redhawk.explorer</groupId>
     <artifactId>gov.redhawk.explorer.product.parent</artifactId>
-    <version>1.10.2-SNAPSHOT</version>
+    <version>1.10.3-SNAPSHOT</version>
   </parent>
   <build>
     <plugins>
