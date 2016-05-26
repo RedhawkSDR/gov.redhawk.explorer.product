@@ -33,7 +33,7 @@
     <gov.redhawk.core.rcp>http://download.redhawksdr.org/gov.redhawk.core/rcp/releases/1.10</gov.redhawk.core.rcp>
     <jacorb>http://download.redhawksdr.org/jacorb/updates/stable</jacorb>
     <logback>http://download.redhawksdr.org/logback/latest</logback>
-    <nebula>http://download.eclipse.org/technology/nebula/archives/Q32014/release</nebula>
+    <nebula>http://archive.eclipse.org/technology/nebula/Q32014/release/</nebula>
     <eclipse-support>http://download.eclipse.org/eclipse/updates/3.8</eclipse-support>
     <eclipse>http://download.eclipse.org/releases/juno</eclipse>
   </properties>
