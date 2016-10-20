@@ -16,7 +16,6 @@
    <launcherArgs>
       <vmArgs>-Xms256m
 -Xmx512m
--XX:MaxPermSize=256m
 -Dcom.sun.CORBA.transport.ORBUseNIOSelectToWait=false
 -Djava.util.logging.config.file=configuration/javalogger.properties
 -Djava.net.preferIPv4Stack=true
