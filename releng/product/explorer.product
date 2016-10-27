@@ -49,7 +49,6 @@
       <feature id="gov.redhawk.explorer" version="2.0.4.qualifier"/>
       <feature id="gov.redhawk.explorer.platform" version="2.0.4.qualifier"/>
       <feature id="gov.redhawk.explorer.support" version="2.0.4.qualifier"/>
-      <feature id="gov.redhawk.e4.rcp" version="2.0.4.qualifier"/>
    </features>
 
    <configurations>
