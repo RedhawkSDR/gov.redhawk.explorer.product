@@ -33,6 +33,7 @@
     <jacorb>http://download.redhawksdr.org/jacorb/updates/stable</jacorb>
     <eclipse>http://download.eclipse.org/releases/mars/</eclipse>
     <eclipse-mars-patch>http://download.redhawksdr.org/eclipse/mars-patch/</eclipse-mars-patch>
+    <nebula>http://download.eclipse.org/nebula/releases/1.0.0/</nebula>
   </properties>
 
   <repositories>
@@ -82,6 +83,12 @@
       <id>org.omg.jacorb</id>
       <layout>p2</layout>
       <url>${jacorb}</url>
+    </repository>
+
+    <repository>
+      <id>nebula</id>
+      <layout>p2</layout>
+      <url>${nebula}</url>
     </repository>
   </repositories>
 
