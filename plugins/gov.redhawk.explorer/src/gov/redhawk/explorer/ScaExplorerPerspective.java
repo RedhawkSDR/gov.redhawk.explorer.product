@@ -11,6 +11,7 @@
 package gov.redhawk.explorer;
 
 import gov.redhawk.sca.ui.views.ScaExplorer;
+import gov.redhawk.ui.views.event.EventView;
 import gov.redhawk.ui.views.namebrowser.view.NameBrowserView;
 
 import org.eclipse.ui.IFolderLayout;
@@ -71,5 +72,9 @@ public class ScaExplorerPerspective implements IPerspectiveFactory {
 		layout.getViewLayout(ScaExplorerPerspective.NAMEBROWSER_VIEW_ID).setMoveable(false);
 		layout.getViewLayout(IPageLayout.ID_PROP_SHEET).setMoveable(false);
 		layout.getViewLayout(ScaExplorerPerspective.PDE_ERROR_LOG_VIEW_ID).setMoveable(false);
+		
+		//
+        layout.addPlaceholder(EventView.ID, IPageLayout.BOTTOM, 0.50f, editorArea);
+        layout.addPlaceholder(EventView.ID + ":*", IPageLayout.BOTTOM, 0.50f, editorArea);
 	}
 }
