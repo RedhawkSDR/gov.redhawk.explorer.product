@@ -11,7 +11,6 @@
 package gov.redhawk.explorer;
 
 import gov.redhawk.sca.ui.views.ScaExplorer;
-import gov.redhawk.ui.views.event.EventView;
 import gov.redhawk.ui.views.namebrowser.view.NameBrowserView;
 
 import org.eclipse.ui.IFolderLayout;
@@ -43,6 +42,7 @@ public class ScaExplorerPerspective implements IPerspectiveFactory {
 	/** The PDE Error Log view ID. */
 	private static final String PDE_ERROR_LOG_VIEW_ID = "org.eclipse.pde.runtime.LogView";
 
+	private static final String EVENT_VIEW_ID = "gov.redhawk.ui.views.event.eventViewer";
 
 	@Override
 	public void createInitialLayout(final IPageLayout layout) {
@@ -74,7 +74,7 @@ public class ScaExplorerPerspective implements IPerspectiveFactory {
 		layout.getViewLayout(ScaExplorerPerspective.PDE_ERROR_LOG_VIEW_ID).setMoveable(false);
 		
 		//
-        layout.addPlaceholder(EventView.ID, IPageLayout.BOTTOM, 0.50f, editorArea);
-        layout.addPlaceholder(EventView.ID + ":*", IPageLayout.BOTTOM, 0.50f, editorArea);
+        layout.addPlaceholder(EVENT_VIEW_ID, IPageLayout.BOTTOM, 0.50f, editorArea);
+        layout.addPlaceholder(EVENT_VIEW_ID + ":*", IPageLayout.BOTTOM, 0.50f, editorArea);
 	}
 }
