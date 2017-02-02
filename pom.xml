@@ -31,8 +31,7 @@
     <mil.jpeojtrs.sca>http://download.redhawksdr.org/mil.jpeojtrs.sca/releases/2.1</mil.jpeojtrs.sca>
     <gov.redhawk.core>http://download.redhawksdr.org/gov.redhawk.core/releases/2.1</gov.redhawk.core>
     <jacorb>http://download.redhawksdr.org/jacorb/updates/stable</jacorb>
-    <eclipse>http://download.eclipse.org/releases/mars/</eclipse>
-    <eclipse-mars-patch>http://download.redhawksdr.org/eclipse/mars-patch/</eclipse-mars-patch>
+    <eclipse>http://download.eclipse.org/releases/neon/</eclipse>
     <nebula>http://download.eclipse.org/nebula/releases/1.0.0/</nebula>
   </properties>
 
@@ -41,12 +40,6 @@
       <id>eclipse</id>
       <layout>p2</layout>
       <url>${eclipse}</url>
-    </repository>
-
-    <repository>
-      <id>eclipse-mars-patch</id>
-      <layout>p2</layout>
-      <url>${eclipse-mars-patch}</url>
     </repository>
 
     <repository>

@@ -30,11 +30,17 @@
    <requires>
       <import feature="org.eclipse.emf.ecore.xcore"/>
       <import feature="org.eclipse.graphiti.feature" version="0.12.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.rcp" version="4.5.3" match="greaterOrEqual"/>
+      <import feature="org.eclipse.rcp" version="4.6.2" match="greaterOrEqual"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
    </requires>
 
-   <!-- plugins from org.eclipse.platform.feature.group, minus a few to make things simpler -->
+   <!-- Contents of feature org.eclipse.platform, minus a few to make things simpler -->
+
+   <!-- Feature org.eclipse.rcp is handled above -->
+
+   <!-- Exclude feature org.eclipse.equinox.p2.user.ui -->
+
+   <!-- Exclude feature org.eclipse.help -->
 
    <!-- Exclude org.apache.ant -->
 
@@ -133,20 +139,6 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.core.runtime.compatibility"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.core.runtime.compatibility.registry"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         fragment="true"/>
-
-   <plugin
          id="org.eclipse.osgi.util"
          download-size="0"
          install-size="0"
@@ -238,6 +230,8 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+
+   <!-- Exclude org.eclipse.ui.monitoring -->
 
    <plugin
          id="org.eclipse.ui.navigator"
@@ -345,16 +339,6 @@
          id="org.eclipse.core.filesystem.linux.x86_64"
          os="linux"
          arch="x86_64"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         fragment="true"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.core.filesystem.solaris.sparc"
-         os="solaris"
-         arch="sparc"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -506,13 +490,21 @@
 
    <!-- Exclude org.eclipse.ui.externaltools -->
 
-   <!-- Exclude org.eclipse.ui.themes -->
+   <plugin
+         id="org.eclipse.ui.themes"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
 
-   <!-- Exclude org.eclipse.core.filesystem.java7 -->
+   <plugin
+         id="org.eclipse.core.runtime"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
 
-   <!-- Exclude org.eclipse.platform.feature.jar -->
-
-   <!-- Exclude org.eclipse.platform_root -->
+   <!-- Exclude org.eclipse.ui.intro.quicklinks -->
 
    <!-- logback related items -->
 
