@@ -215,7 +215,8 @@
          id="org.eclipse.ui.intro.universal"
          download-size="0"
          install-size="0"
-         version="0.0.0"/>
+         version="0.0.0"
+         unpack="false"/>
 
    <plugin
          id="org.eclipse.ui.cheatsheets"
@@ -226,6 +227,13 @@
 
    <plugin
          id="org.eclipse.ui.browser"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.genericeditor"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -296,36 +304,6 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.core.filesystem.aix.ppc"
-         os="aix"
-         arch="ppc"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         fragment="true"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.core.filesystem.aix.ppc64"
-         os="aix"
-         arch="ppc64"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         fragment="true"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.core.filesystem.hpux.ia64"
-         os="hpux"
-         arch="ia64"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         fragment="true"
-         unpack="false"/>
-
-   <plugin
          id="org.eclipse.core.filesystem.linux.x86"
          os="linux"
          arch="x86"
@@ -388,16 +366,6 @@
          id="org.eclipse.core.filesystem.win32.x86_64"
          os="win32"
          arch="x86_64"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         fragment="true"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.core.filesystem.linux.ppc"
-         os="linux"
-         arch="ppc"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -488,14 +456,23 @@
          fragment="true"
          unpack="false"/>
 
-   <!-- Exclude org.eclipse.ui.externaltools -->
+    <plugin
+         id="org.eclipse.equinox.security.linux.x86_64"
+         os="linux"
+         arch="x86_64"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+
+   <!-- Exclude org.eclipse.core.externaltools -->
 
    <plugin
          id="org.eclipse.ui.themes"
          download-size="0"
          install-size="0"
-         version="0.0.0"
-         unpack="false"/>
+         version="0.0.0"/>
 
    <plugin
          id="org.eclipse.core.runtime"
@@ -505,6 +482,8 @@
          unpack="false"/>
 
    <!-- Exclude org.eclipse.ui.intro.quicklinks -->
+
+   <!-- Exclude org.eclipse.team.genericeditor.diff.extension -->
 
    <!-- logback related items -->
 
