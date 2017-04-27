@@ -28,7 +28,6 @@
    </license>
 
    <requires>
-      <import feature="org.eclipse.emf.ecore.xcore"/>
       <import feature="org.eclipse.graphiti.feature" version="0.12.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.rcp" version="4.6.2" match="greaterOrEqual"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
