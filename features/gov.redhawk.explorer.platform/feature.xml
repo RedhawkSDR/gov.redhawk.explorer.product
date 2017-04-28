@@ -508,7 +508,14 @@
 
    <!-- Exclude org.eclipse.ui.externaltools -->
 
-   <!-- Exclude org.eclipse.ui.themes -->
+   <plugin
+         id="org.eclipse.ui.themes"
+         os="macosx"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
 
    <!-- Exclude org.eclipse.core.filesystem.java7 -->
 
