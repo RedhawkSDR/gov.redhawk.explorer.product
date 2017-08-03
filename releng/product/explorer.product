@@ -33,7 +33,6 @@
    <windowImages i16="/gov.redhawk.explorer/icons/alt_window_16.gif" i32="/gov.redhawk.explorer/icons/alt_window_32.gif"/>
 
    <launcher name="explorer">
-      <solaris/>
       <win useIco="false">
          <bmp/>
       </win>
@@ -43,7 +42,6 @@
    <vm>
       <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</linux>
       <macos include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</macos>
-      <solaris include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</solaris>
       <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</windows>
    </vm>
 
