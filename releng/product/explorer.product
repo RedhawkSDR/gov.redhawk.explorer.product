@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="REDHAWK Explorer" uid="gov.redhawk.explorer.product" id="gov.redhawk.explorer.product" application="gov.redhawk.explorer.application" version="2.0.7.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="REDHAWK Explorer" uid="gov.redhawk.explorer.product" id="gov.redhawk.explorer.product" application="gov.redhawk.explorer.application" version="2.0.8.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/gov.redhawk.explorer/icons/alt_about.gif"/>
@@ -49,9 +49,9 @@
    </plugins>
 
    <features>
-      <feature id="gov.redhawk.explorer" version="2.0.7.qualifier"/>
-      <feature id="gov.redhawk.explorer.platform" version="2.0.7.qualifier"/>
-      <feature id="gov.redhawk.explorer.support" version="2.0.7.qualifier"/>
+      <feature id="gov.redhawk.explorer" version="2.0.8.qualifier"/>
+      <feature id="gov.redhawk.explorer.platform" version="2.0.8.qualifier"/>
+      <feature id="gov.redhawk.explorer.support" version="2.0.8.qualifier"/>
    </features>
 
    <configurations>
