@@ -31,17 +31,18 @@ public class ScaExplorerPerspective implements IPerspectiveFactory {
 	 * @since 1.10
 	 */
 	public static final String VIEW_ID = ScaExplorer.VIEW_ID;
-	
+
 	/**
 	 * @since 1.10
 	 */
 	public static final String PERSPECTIVE_ID = "gov.redhawk.explorer.perspective";
-	
+
 	private static final String NAMEBROWSER_VIEW_ID = NameBrowserView.ID;
 
 	/** The PDE Error Log view ID. */
 	private static final String PDE_ERROR_LOG_VIEW_ID = "org.eclipse.pde.runtime.LogView";
 
+	private static final String ALLOC_MGR_VIEW_ID = "gov.redhawk.ui.views.allocmgr.view";
 	private static final String EVENT_VIEW_ID = "gov.redhawk.ui.views.event.eventViewer";
 
 	@Override
@@ -72,9 +73,10 @@ public class ScaExplorerPerspective implements IPerspectiveFactory {
 		layout.getViewLayout(ScaExplorerPerspective.NAMEBROWSER_VIEW_ID).setMoveable(false);
 		layout.getViewLayout(IPageLayout.ID_PROP_SHEET).setMoveable(false);
 		layout.getViewLayout(ScaExplorerPerspective.PDE_ERROR_LOG_VIEW_ID).setMoveable(false);
-		
+
 		//
-        layout.addPlaceholder(EVENT_VIEW_ID, IPageLayout.BOTTOM, 0.50f, editorArea);
-        layout.addPlaceholder(EVENT_VIEW_ID + ":*", IPageLayout.BOTTOM, 0.50f, editorArea);
+		layout.addPlaceholder(ALLOC_MGR_VIEW_ID + ":*", IPageLayout.BOTTOM, 0.50f, editorArea);
+		layout.addPlaceholder(EVENT_VIEW_ID, IPageLayout.BOTTOM, 0.50f, editorArea);
+		layout.addPlaceholder(EVENT_VIEW_ID + ":*", IPageLayout.BOTTOM, 0.50f, editorArea);
 	}
 }
