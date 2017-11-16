@@ -43,6 +43,7 @@ public class ScaExplorerPerspective implements IPerspectiveFactory {
 	private static final String PDE_ERROR_LOG_VIEW_ID = "org.eclipse.pde.runtime.LogView";
 
 	private static final String ALLOC_MGR_VIEW_ID = "gov.redhawk.ui.views.allocmgr.view";
+	private static final String CONN_MGR_VIEW_ID = "gov.redhawk.ui.views.connmgr.view";
 	private static final String EVENT_VIEW_ID = "gov.redhawk.ui.views.event.eventViewer";
 
 	@Override
@@ -76,6 +77,7 @@ public class ScaExplorerPerspective implements IPerspectiveFactory {
 
 		//
 		layout.addPlaceholder(ALLOC_MGR_VIEW_ID + ":*", IPageLayout.BOTTOM, 0.50f, editorArea);
+		layout.addPlaceholder(CONN_MGR_VIEW_ID + ":*", IPageLayout.BOTTOM, 0.50f, editorArea);
 		layout.addPlaceholder(EVENT_VIEW_ID, IPageLayout.BOTTOM, 0.50f, editorArea);
 		layout.addPlaceholder(EVENT_VIEW_ID + ":*", IPageLayout.BOTTOM, 0.50f, editorArea);
 	}
