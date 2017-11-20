@@ -29,6 +29,7 @@
 
    <requires>
       <import feature="org.eclipse.emf.ecore.xcore"/>
+      <import feature="org.eclipse.equinox.p2.extras.feature" version="1.2.101" match="greaterOrEqual"/>
       <import feature="org.eclipse.graphiti.feature" version="0.12.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.rcp" version="4.5.3" match="greaterOrEqual"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
@@ -539,13 +540,6 @@
 
    <plugin
          id="ch.qos.logback.core"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.equinox.p2.reconciler.dropins"
          download-size="0"
          install-size="0"
          version="0.0.0"
