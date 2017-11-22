@@ -16,6 +16,8 @@
    <launcherArgs>
       <vmArgs>-Xms256m
 -Xmx512m
+-XX:+UseG1GC
+-XX:+UseStringDeduplication
 -Dcom.sun.CORBA.transport.ORBUseNIOSelectToWait=false
 -Djava.util.logging.config.file=configuration/javalogger.properties
 -Djava.net.preferIPv4Stack=true
