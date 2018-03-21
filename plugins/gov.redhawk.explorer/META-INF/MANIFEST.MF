@@ -20,3 +20,4 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-Vendor: %Bundle-Provider
 Export-Package: gov.redhawk.explorer,gov.redhawk.explorer.internal;x-i
  nternal=true,gov.redhawk.explorer.wizard
+Automatic-Module-Name: gov.redhawk.explorer
