@@ -32,7 +32,7 @@
     <gov.redhawk.core>http://download.redhawksdr.org/gov.redhawk.core/releases/2.1</gov.redhawk.core>
     <jacorb>http://download.redhawksdr.org/jacorb/updates/stable</jacorb>
     <eclipse>http://download.eclipse.org/releases/photon/</eclipse>
-    <nebula>http://download.eclipse.org/nebula/releases/1.4.0/</nebula>
+    <nebula>http://download.eclipse.org/nebula/releases/2.0.0/</nebula>
   </properties>
 
   <repositories>
