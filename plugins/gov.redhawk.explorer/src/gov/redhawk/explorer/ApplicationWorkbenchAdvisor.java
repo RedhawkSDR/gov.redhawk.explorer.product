@@ -43,15 +43,15 @@ public class ApplicationWorkbenchAdvisor extends WorkbenchAdvisor {
 		private final Object resourceFactory = new ResourceFactory();
 
 		@Override
-		public Object getAdapter(final Object o, @SuppressWarnings("rawtypes") final Class adapterType) {
-			if (adapterType.isInstance(o)) {
-				return o;
+		public <T> T getAdapter(Object adaptableObject, Class<T> adapterType) {
+			if (adapterType.isInstance(adaptableObject)) {
+				return adapterType.cast(adaptableObject);
 			}
 			if (adapterType == IPersistableElement.class) {
-				return getPersistableElement(o);
+				return adapterType.cast(getPersistableElement(adaptableObject));
 			}
 			if (adapterType == IElementFactory.class) {
-				return getElementFactory(o);
+				return adapterType.cast(getElementFactory(adaptableObject));
 			}
 
 			return null;
