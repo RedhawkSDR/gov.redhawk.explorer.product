@@ -2,7 +2,6 @@
 <?pde version="3.5"?>
 
 <product name="REDHAWK Explorer" uid="gov.redhawk.explorer.product" id="gov.redhawk.explorer.product" application="gov.redhawk.explorer.application" version="3.0.0.qualifier" useFeatures="true" includeLaunchers="true">
-
    <aboutInfo>
       <image path="/gov.redhawk.explorer/icons/alt_about.gif"/>
       <text>
